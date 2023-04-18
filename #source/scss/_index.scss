@@ -30,16 +30,24 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    height: 94vh;
+    width: 18vw;
 
     img {
-        height: 94vh;
-        width: 18vw;
+        width: 100%;
+        height: 100%;
         background-size: cover;
     }
 }
 
+.mainscreen__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .mainscreen__content {
-    width: 100%;
+    width: 78vw;
     // height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 10px 0;
@@ -106,9 +114,13 @@
 }
 
 @media(min-width: 576px) {
-    .mainscreen__title img {
+    .mainscreen__title {
         height: 90vh;
         width: 13vw;
+    }
+    .mainscreen__content {
+        width: 84vw;
+        min-height: 350px;
     }
 }
 
