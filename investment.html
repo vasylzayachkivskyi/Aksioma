@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інвестиції</title>
+    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="burger-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="header__menu">
+                            <div class="container">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            головна
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">
+                                            Каталог
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">
+                                            про нас
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="investment.html">
+                                            інвестиції
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contacts.html">
+                                            контакти
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html">
+                                            команда
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            обране
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/logo.svg" alt="logotype">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="investment">
+                <div class="container">
+                    <div class="investment__title secttitle">
+                        <h1>
+                            інвестиції
+                        </h1>
+                    </div>
+                    <div class="investment__descr">
+                        <p>
+                            Ми працюємо на ринку нерухомості понад 10 років. І за роки роботи, добре розуміємо, що
+                            будівництво – це уже не просто стіни та бетон.
+                        </p>
+                        <p>
+                            Наша мета – створення особливих проектів, що відповідають сучасним потребам ринку та
+                            поєднують в
+                            собі продуману концепцію забудови та інфраструктури.
+                        </p>
+                    </div>
+                    <div class="investment__btns">
+                        <a class="popup__btn" data-popup="project-popup" href="#">Пошук проекту</a>
+                        <a class="popup__btn" data-popup="investment-popup" href="#">Пошук інвестора</a>
+                    </div>
+
+                    <div class="swiper investment__slider">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/investment_slider_img.png" alt="image">
+                                <a href="real-estate.html">
+                                    <p>закордонна<br>нерухомість</p>
+                                    <span>Європа та США</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/investment_slider_img.png" alt="image">
+                                <a href="real-estate.html">
+                                    <p>закордонна<br>нерухомість</p>
+                                    <span>Європа та США</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/investment_slider_img.png" alt="image">
+                                <a href="real-estate.html">
+                                    <p>закордонна<br>нерухомість</p>
+                                    <span>Європа та США</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar">
+                <div class="container">
+                    <div class="sidebar__item">
+                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                        <a href="catalog.html">каталог</a>
+                    </div>
+                    <div class="sidebar__item">
+                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
+                        <a href="investment.html">інвестиції</a>
+                    </div>
+                    <div class="sidebar__item">
+                        <img src="img/about_sidebar_mobile.jpg" alt="image">
+                        <a href="about.html">про нас</a>
+                    </div>
+                    <div class="sidebar__item">
+                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
+                        <a href="contacts.html">контакти</a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- popup window investment -->
+        <div class="popup__window investment-popup">
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__body">
+                        <div class="popup__close">
+                            <img src="img/svg_icons/close_popup.svg" alt="close">
+                        </div>
+                        <div class="popup__title">
+                            <h2>
+                                пошук інвестора
+                            </h2>
+                        </div>
+                        <div class="popup__form">
+                            <form>
+                                <input type="text" class="phoneinp" placeholder="Iм'я" required>
+                                <input type="text" class="phoneinp" placeholder="Номер телефону" required>
+                                <input type="text" class="phoneinp" placeholder="Ваш коментар" required>
+                                <!-- <button type="submit">Надіслати!</button> -->
+                                <a class="popup__btn" data-popup="thankyou-popup">Надіслати!</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- popup window project -->
+                <div class="popup__window project-popup">
+                    <div class="container">
+                        <div class="popup__wrapper">
+                            <div class="popup__body">
+                                <div class="popup__close">
+                                    <img src="img/svg_icons/close_popup.svg" alt="close">
+                                </div>
+                                <div class="popup__title">
+                                    <h2>
+                                        пошук проекту
+                                    </h2>
+                                </div>
+                                <div class="popup__form">
+                                    <form>
+                                        <input type="text" class="phoneinp" placeholder="Iм'я" required>
+                                        <input type="text" class="phoneinp" placeholder="Номер телефону" required>
+                                        <input type="text" class="phoneinp" placeholder="Ваш коментар" required>
+                                        <!-- <button type="submit">Надіслати!</button> -->
+                                        <a class="popup__btn" data-popup="thankyou-popup">Надіслати!</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- thank you popup -->
+        <div class="popup__window thankyou-popup">
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__body">
+                        <div class="popup__close">
+                            <img src="img/svg_icons/close_popup.svg" alt="close">
+                        </div>
+                        <div class="popup__icon">
+                            <img src="img/svg_icons/check_icon.svg" alt="icon">
+                        </div>
+                        <div class="popup__title">
+                            <h2>
+                                ваш запит надіслано!
+                            </h2>
+                        </div>
+                        <div class="popup__descr">
+                            <p>
+                                Наш менеджер звʼяжеться з Вами<br>найближчим часом для уточнення<br>деталей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

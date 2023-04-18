@@ -1,0 +1,208 @@
+.manager {
+    padding: 110px 0 60px;
+}
+
+.manager__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    img {
+        width: 136px;
+        height: 136px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-right: 21px;
+    }
+}
+
+.manager__descr {
+    margin-bottom: 40px;
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 144%;
+        color: #FFFFFF;
+
+        +p {
+            margin-top: 20px;
+        }
+    }
+
+    span,
+    a {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #B0292E;
+    }
+}
+
+.manager__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.manager__btn + .manager__btn{
+    margin-top: 20px;
+}
+
+.manager__contacts-left {
+    a {
+        font-size: 18px;
+        display: block;
+        line-height: 26px;
+        color: #FFFFFF;
+        padding-left: 30px;
+        position: relative;
+
+        +a {
+            margin-top: 20px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            background-image: url(../img/svg_icons/telephone_manager_icon.svg);
+        }
+    }
+}
+
+.manager__contacts-right {
+    display: flex;
+
+    img {
+        width: 36px;
+        height: 36px;
+        background-size: cover;
+    }
+
+    a {
+        display: block;
+
+        +a {
+            margin-left: 30px;
+        }
+    }
+}
+
+
+//  proposition section ------ //
+
+.proposition {
+    padding-bottom: 100px;
+}
+
+
+.proposition__title {
+    h2 {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
+}
+
+.proposition__item {
+    margin-bottom: 20px;
+}
+
+.slider {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        z-index: 99;
+        width: auto;
+
+        &::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+        }
+    }
+
+    .swiper-button-next {
+        &::after {
+            content: '';
+            background-image: url(../img/svg_icons/slide_arrow_next.svg);
+        }
+    }
+
+    .swiper-button-prev {
+        &::after {
+            content: '';
+            background-image: url(../img/svg_icons/slide_arrow_prev.svg);
+        }
+    }
+
+    .swiper-slide {
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 267px;
+            object-fit: cover;
+        }
+
+        .slider__info {
+            padding: 17px 20px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                font-size: 14px;
+                line-height: 125%;
+                color: #000000;
+                max-width: 50%;
+            }
+
+            .price {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+            }
+        }
+
+        .slider__descr {
+            background: #F3F3F3;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #898989;
+
+                img {
+                    width: 20px;
+                    height: auto;
+                    background-size: cover;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}

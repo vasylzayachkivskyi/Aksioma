@@ -1,0 +1,185 @@
+.real-estate__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    a {
+        margin-right: 16px;
+
+        img {
+            width: 30px;
+            background-size: cover;
+        }
+    }
+}
+
+.real-estate__content {
+    margin-bottom: 20px;
+}
+
+.real-estate__item {
+    height: 260px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(greg-althoff-Wy9aq4yMq_g-unsplash.jpg);
+
+        p {
+            font-weight: 800;
+            line-height: 30px;
+            font-size: 20px;
+            font-family: 'Mulish';
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+
+//  estate page ---- //
+
+.estate__descr {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.estate__btn {
+    margin-top: 40px;
+}
+
+.estate__slider {
+    margin-bottom: 40px;
+    .estate__slider-big {
+        margin-bottom: 10px;
+        .swiper-slide {
+        height: 220px;
+        }
+    }
+
+    .estate__slider-small {
+        .swiper-slide {
+            height: 60px;
+            transition: .3s;
+            a:after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transition: .4s;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            }
+        }
+
+        .swiper-slide-thumb-active {
+            a:after{
+                opacity: 0;
+            }
+        }
+    }
+
+    .swiper-slide {
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        z-index: 99;
+        width: auto;
+
+        &::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+        }
+    }
+
+    .swiper-button-next {
+        &::after {
+            content: '';
+            background-image: url(../img/svg_icons/slide_arrow_next.svg);
+        }
+    }
+
+    .swiper-button-prev {
+        &::after {
+            content: '';
+            background-image: url(../img/svg_icons/slide_arrow_prev.svg);
+        }
+    }
+}
+
+.fancybox__nav .f-button{
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    svg{
+        opacity: 0;
+    }
+    &.is-prev{
+        background-image: url(../img/svg_icons/slide_arrow_prev.svg);
+        margin-left: 10px;
+    }
+    &.is-next{
+        background-image: url(../img/svg_icons/slide_arrow_next.svg);
+        margin-right: 10px;
+    }
+}
+
+.fancybox__slide.has-image>.fancybox__content {
+    border-radius: 20px;
+    overflow: hidden;
+}

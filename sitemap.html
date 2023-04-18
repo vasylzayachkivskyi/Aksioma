@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <style>
+    .sitemap {
+      padding: 0px 50px;
+    }
+
+    h2 {
+      color: #ccab52;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .sitemap__link {
+      font-size: 24px;
+      padding: 10px 0 0;
+      display: block;
+      color: #9c7e56;
+      transition: .3s;
+    }
+
+
+    .sitemap__link:hover {
+      color: #dabd9a;
+      text-decoration: underline;
+    }
+
+    @media(max-width:1440px) {
+      .sitemap__link {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    @media(max-width:992px) {
+      .sitemap__link {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    @media(max-width:768px) {
+      .sitemap {
+        padding: 15px;
+      }
+    }
+    
+  </style>
+
+  
+<section class="sitemap">
+  <a class="sitemap__link" href="index.html" >Головна</a>
+  <a class="sitemap__link" href="investment.html" >Інвестиції</a>
+  <a class="sitemap__link" href="about.html" >Про нас</a>
+  <a class="sitemap__link" href="catalog.html" >Каталог</a>
+  <a class="sitemap__link" href="team.html" >Команда</a>
+  <a class="sitemap__link" href="contacts.html" >Контакти</a>
+</section>
+  
+
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
