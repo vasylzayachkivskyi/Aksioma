@@ -307,7 +307,7 @@
     p {
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.04em;
@@ -333,6 +333,7 @@
         font-size: 18px;
         line-height: 26px;
         color: #AEAEAE;
+        border-radius: 0;
 
         &::placeholder {
             font-weight: 300;
@@ -364,5 +365,15 @@
         letter-spacing: 0.04em;
         color: #FFFFFF;
         margin-top: 40px;
+    }
+}
+
+
+
+// RESPONSIVE ------------- //
+
+@media(min-width: 375px){
+    .popup__descr p {
+        font-size: 18px;
     }
 }

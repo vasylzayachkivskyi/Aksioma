@@ -52,7 +52,7 @@
 
 .manager__contacts-left {
     a {
-        font-size: 18px;
+        font-size: 16px;
         display: block;
         line-height: 26px;
         color: #FFFFFF;
@@ -90,7 +90,7 @@
         display: block;
 
         +a {
-            margin-left: 30px;
+            margin-left: 20px;
         }
     }
 }
@@ -204,5 +204,16 @@
                 }
             }
         }
+    }
+}
+
+// RESPONSIVE ------------- //
+
+@media(min-width: 375px){
+    .manager__contacts-right a+a {
+        margin-left: 30px;
+    }
+    .manager__contacts-left a {
+        font-size: 18px;
     }
 }

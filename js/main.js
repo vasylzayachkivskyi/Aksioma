@@ -17,8 +17,7 @@ $(function () {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
-        // effect: 'coverflow',
+        }
 
     });
 
@@ -28,7 +27,7 @@ $(function () {
         spaceBetween: 10,
         loop: true,
         breakpoints: {
-            // when window width is >= 320px
+            // when window width is >= 375px
             375: {
                 slidesPerView: 3,
                 spaceBetween: 20
@@ -75,6 +74,8 @@ $(function () {
     $('.slider').each(function () {
 
         var swiper = new Swiper(this, {
+            spaceBetween: 10,
+            loop:true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
