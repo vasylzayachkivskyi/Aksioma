@@ -77,7 +77,7 @@
         </header>
 
         <main class="main">
-            <section class="investment">
+            <section class="investment sectpadding">
                 <div class="container">
                     <div class="investment__title secttitle">
                         <h1>
@@ -157,13 +157,40 @@
         <div class="popup__window investment-popup">
             <div class="container">
                 <div class="popup__wrapper">
+                    <div class="popup__close">
+                        <img src="img/svg_icons/close_popup.svg" alt="close">
+                    </div>
                     <div class="popup__body">
-                        <div class="popup__close">
-                            <img src="img/svg_icons/close_popup.svg" alt="close">
-                        </div>
                         <div class="popup__title">
                             <h2>
                                 пошук інвестора
+                            </h2>
+                        </div>
+                        <div class="popup__form form-investment">
+                            <form>
+                                <input type="text" class="phoneinp" placeholder="Iм'я" required>
+                                <input type="text" class="phoneinp" placeholder="Номер телефону" required>
+                                <input type="text" class="phoneinp" placeholder="Ваш коментар" required>
+                                <!-- <button type="submit">Надіслати!</button> -->
+                                <a class="popup__btn" data-popup="thankyou-popup">Надіслати!</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup window project -->
+        <div class="popup__window project-popup">
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__close">
+                        <img src="img/svg_icons/close_popup.svg" alt="close">
+                    </div>
+                    <div class="popup__body">
+                        <div class="popup__title">
+                            <h2>
+                                пошук проекту
                             </h2>
                         </div>
                         <div class="popup__form">
@@ -180,41 +207,14 @@
             </div>
         </div>
 
-                <!-- popup window project -->
-                <div class="popup__window project-popup">
-                    <div class="container">
-                        <div class="popup__wrapper">
-                            <div class="popup__body">
-                                <div class="popup__close">
-                                    <img src="img/svg_icons/close_popup.svg" alt="close">
-                                </div>
-                                <div class="popup__title">
-                                    <h2>
-                                        пошук проекту
-                                    </h2>
-                                </div>
-                                <div class="popup__form">
-                                    <form>
-                                        <input type="text" class="phoneinp" placeholder="Iм'я" required>
-                                        <input type="text" class="phoneinp" placeholder="Номер телефону" required>
-                                        <input type="text" class="phoneinp" placeholder="Ваш коментар" required>
-                                        <!-- <button type="submit">Надіслати!</button> -->
-                                        <a class="popup__btn" data-popup="thankyou-popup">Надіслати!</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
         <!-- thank you popup -->
         <div class="popup__window thankyou-popup">
             <div class="container">
                 <div class="popup__wrapper">
+                    <div class="popup__close">
+                        <img src="img/svg_icons/close_popup.svg" alt="close">
+                    </div>
                     <div class="popup__body">
-                        <div class="popup__close">
-                            <img src="img/svg_icons/close_popup.svg" alt="close">
-                        </div>
                         <div class="popup__icon">
                             <img src="img/svg_icons/check_icon.svg" alt="icon">
                         </div>

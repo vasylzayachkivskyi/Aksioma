@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
+    <title>Результати пошуку</title>
     <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
@@ -90,8 +90,13 @@
                             </a>
                         </li>
                         <li>
-                            <span>
+                            <a href="catalog.html">
                                 Каталог
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                Результати пошуку
                             </span>
                         </li>
                     </ul>
@@ -99,57 +104,20 @@
             </section>
 
 
+
             <section class="catalog">
                 <div class="container">
                     <div class="catalog__title secttitle">
                         <h1>
-                            Каталог
+                            результати пошуку
                         </h1>
                     </div>
-                    <div class="catalog__top">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="catalog__top-item">
-                                    <img src="img/catalog_item1.png" alt="image">
-                                    <a href="#">будинки</a>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="catalog__top-item">
-                                    <img src="img/catalog_item2.png" alt="image">
-                                    <a href="#">квартири</a>
-                                </div>
-                            </div>
-                            <div class="col-4 d-flex flex-column justify-content-between">
-                                <div class="catalog__top-item halfheight">
-                                    <img src="img/catalog_item3.png" alt="image">
-                                    <a href="#">котеджні містечка</a>
-                                </div>
-                                <div class="catalog__top-item halfheight">
-                                    <img src="img/catalog_item4.png" alt="image">
-                                    <a href="#">земельні ділянки</a>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="catalog__top-item">
-                                    <img src="img/catalog_item5.png" alt="image">
-                                    <a href="#">комерційна нерухомість</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="proposition">
-                <div class="container">
                     <div class="filter">
                         <div class="filter__head">
                             <div class="counter">
                                 5
                             </div>
-                            <p class="hide-filter">Розгорнути фільтр</a>
+                            <p class="hide-filter">Розгорнути фільтр</p>
                             <p class="open-filter">Згорнути фільтр</p>
                             <img src="img/svg_icons/filter_icon.svg" alt="image">
                         </div>
@@ -184,6 +152,11 @@
                             <a href="#" class="popup__btn" data-popup="search-popup">Розширений пошук</a>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="proposition">
+                <div class="container">
                     <div class="proposition__inner">
                         <div class="row">
                             <div class="col-12">
@@ -602,10 +575,28 @@
         <div class="popup__window search-popup">
             <div class="container">
                 <div class="popup__wrapper">
-                    <div class="popup__close">
-                        <img src="img/svg_icons/close_popup.svg" alt="close">
-                    </div>
                     <div class="popup__body">
+                        <div class="popup__close">
+                            <img src="img/svg_icons/close_popup.svg" alt="close">
+                        </div>
+                        <div class="popup__title">
+                            <h2>
+                                розширений пошук
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- search popup -->
+          <div class="popup__window search-popup">
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__body">
+                        <div class="popup__close">
+                            <img src="img/svg_icons/close_popup.svg" alt="close">
+                        </div>
                         <div class="popup__title">
                             <h2>
                                 розширений пошук
@@ -674,20 +665,14 @@
                                 </div>
 
                                 <div class="search-row">
-                                    <div class="search-row__item">
-                                        <input class="custom-input" id="dolar" type="radio" name="currency">
-                                        <label for="dolar">$</label>
-                                    </div>
-                                    <div class="search-row__item">
-                                        <input class="custom-input" id="euro" type="radio" name="currency">
-                                        <label for="euro">€</label>
-                                    </div>
-                                    <div class="search-row__item">
-                                        <input class="custom-input" id="uah" type="radio" name="currency">
-                                        <label for="uah">₴</label>
-                                    </div>
+                                    <input class="custom-input" id="dolar" type="radio" name="currency">
+                                    <label for="dolar">$</label>
+                                    <input class="custom-input" id="euro" type="radio" name="currency">
+                                    <label for="euro">€</label>
+                                    <input class="custom-input" id="uah" type="radio" name="currency">
+                                    <label for="uah">₴</label>
                                 </div>
-
+                                
 
                                 <button type="submit">
                                     Шукати
@@ -714,8 +699,8 @@
     <script src="js/lib/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/lib/plyr-player.js"></script>
-    <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/lib/select2.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
 

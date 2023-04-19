@@ -1,0 +1,113 @@
+.object__descr {
+    margin-bottom: 10px;
+
+    &-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .price {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 128%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #B0292E;
+        }
+
+        .save {
+            display: block;
+            width: 48px;
+            height: 48px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.object__descr-bottom {
+    margin-bottom: 42px;
+    h2 {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+    }
+}
+
+.object__descr-row {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 144%;
+        color: #898989;
+
+        span {
+            color: #FFFFFF;
+        }
+    }
+
+    &+.object__descr-row {
+        margin-top: 20px;
+    }
+}
+
+
+.map__title {
+    h2 {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+}
+
+.manager.object-page {
+    padding-top: 70px;
+}
+
+.map__content {
+    width: 100%;
+    margin-bottom: 53px;
+
+    a,
+    iframe {
+        display: block;
+        width: 100%;
+        height: 183px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
