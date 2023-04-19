@@ -10,13 +10,16 @@ $(function () {
 
     // slider investment ----- //
     var swiper = new Swiper(".investment__slider", {
-        effect: "cards",
-        grabCursor: true,
+        slidesPerView: 1.1,
+        centeredSlides: true,
+        speed:500,
         loop:true,
-        // navigation: {
-        //     nextEl: ".swiper-button-next",
-        //     prevEl: ".swiper-button-prev",
-        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // effect: 'coverflow',
+
     });
 
     // slider estate ----- //
