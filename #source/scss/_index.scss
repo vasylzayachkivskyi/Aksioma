@@ -43,14 +43,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 100vh;
 }
 
 .mainscreen__content {
     width: 76vw;
-    // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
+    height: 100%;
     padding: 10px 0;
-    min-height: 650px;
+    min-height: 600px;
     max-height: 93vh;
     display: flex;
     justify-content: space-between;
