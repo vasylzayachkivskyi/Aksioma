@@ -1,12 +1,12 @@
-:root {
-    --vh: calc(var(--vh, 1vh));
-  }
+// :root {
+//     --vh: calc(var(--vh, 1vh));
+//   }
   
-  @media (min-width: 768px) {
-    :root {
-      --vh: calc(var(--vh, 1vh) * 0.01 * (100 - 56));
-    }
-  }
+//   @media (min-width: 768px) {
+//     :root {
+//       --vh: calc(var(--vh, 1vh) * 0.01 * (100 - 56));
+//     }
+//   }
 
 .mainscreen {
     background-color: #000;
@@ -23,7 +23,8 @@
     align-items: center;
     justify-content: flex-end;
     // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    // height: calc(var(--vh, 1vh) * 100);
+    height: var(--doc-height);
 }
 
 .mainscreen__content {
