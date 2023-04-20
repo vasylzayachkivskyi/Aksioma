@@ -15,7 +15,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    min-height: 600px;
+    // min-height: 600px;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@
 }
 
 .mainscreen__content {
-    width: 78vw;
+    width: 76vw;
     // height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     padding: 10px 0;
@@ -105,7 +105,11 @@
 
 // RESPONSIVE
 
-@media(min-width: 376px) {
+@media(min-width: 375px) {
+
+    .mainscreen__content {
+        width: 78vw;
+    }
 
     .mainscreen__content-item {
         a {
@@ -129,5 +133,8 @@
     .mainscreen__content-item:nth-child(3) {
         height: 100%;
         width: 19%;
+    }
+    .mainscreen__content {
+        min-height: 200px;
     }
 }
