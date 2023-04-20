@@ -137,7 +137,7 @@ $(function () {
 
 
 // video
-if (document.querySelector('video')) {
+if (document.querySelector('.team__video')) {
     const player = new Plyr('#player', {
         hideControls: true
     });
