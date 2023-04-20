@@ -103,6 +103,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -376,24 +377,46 @@
 
             p {
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 15px;
                 line-height: 20px;
                 color: #FFFFFF;
-                width: 33%;
+                width: 35%;
                 display: block;
             }
 
-            .select2-container--default .select2-selection--single .select2-selection__arrow {
-                right: 5%;
-            }
 
-            .select2 {
-                width: 27% !important;
-                margin-left: 7%;
-            }
+            input {
+                width: 70px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 20px;
+                border: none;
+                color: #111;
+                margin-bottom: 0;
+                padding: 14px;
 
-            .select2-container {
-                margin-bottom: 0px;
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #A1A1A1;
+                }
+
+            }
+            .searchinp{
+                position: relative;
+                margin-left: 10px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 10%;
+                    top: 50%;
+                    transform: translateY(-40%);
+                    background-image: url(../img/svg_icons/select_arrow.svg);
+                    width: 20px;
+                    height: 20px;
+                    z-index: 3;
+                }
             }
         }
 
@@ -459,5 +482,14 @@
         a {
             font-size: 16px;
         }
+    }
+    .search-popup .popup__form .search-row input {
+        width: 88px;
+    }
+    .search-popup .popup__form .search-row .searchinp {
+        margin-left: 20px;
+    }
+    .search-popup .popup__form .search-row p {
+        font-size: 16px;
     }
 }
