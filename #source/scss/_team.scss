@@ -8,12 +8,18 @@
 
 .team__video {
     margin-bottom: 60px;
-    width: 100%;
     border-radius: 20px;
     overflow: hidden;
 
     #player {
-        height: 220px;
+        max-height: 220px;
+        width: 100%;
+    }
+    .plyr__poster {
+        background-color: transparent;
+        background-position: initial; 
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .plyr__control--overlaid {
@@ -24,11 +30,27 @@
             background: transparent;
         }
     }
-    .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+
+    .plyr--video .plyr__control.plyr__tab-focus,
+    .plyr--video .plyr__control:hover,
+    .plyr--video .plyr__control[aria-expanded=true] {
         background: #B0292E;
     }
+
     .plyr--full-ui input[type=range] {
         color: #B0292E;
+    }
+
+    .plyr--paused {
+        .plyr__controls {
+            opacity: 0;
+        }
+    }
+
+    .plyr--playing.plyr--hide-controls {
+        .plyr__controls {
+            opacity: 1;
+        }
     }
 }
 

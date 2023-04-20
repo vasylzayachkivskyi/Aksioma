@@ -434,7 +434,8 @@
         .custom-input+label::after {
             content: '';
             position: absolute;
-            top: 5px;
+            top: 50%;
+            transform: translateY(-50%);
             left: 2px;
             width: 11px;
             height: 11px;
