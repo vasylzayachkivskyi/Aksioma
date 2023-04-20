@@ -30,7 +30,7 @@
 .mainscreen__content {
     width: 76vw;
     padding: 10px 0;
-    min-height: 550px;
+    min-height: 300px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -44,6 +44,7 @@
     left: 0;
     transform: translateY(-50%);
     height: 93vh;
+    min-height: 300px;
     width: 18vw;
 
     img {
@@ -120,6 +121,9 @@
     .mainscreen__content {
         width: 84vw;
     }
+}
+
+@media (min-width: 576px) and (max-height:500px) {
     .mainscreen__content-item,
     .mainscreen__content-item:nth-child(3) {
         height: 100%;
