@@ -12,6 +12,10 @@
     border-radius: 20px;
     overflow: hidden;
 
+    #player {
+        height: 220px;
+    }
+
     .plyr__control--overlaid {
         background: transparent;
         border: 2px solid #fff;
@@ -19,6 +23,12 @@
         &:hover {
             background: transparent;
         }
+    }
+    .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+        background: #B0292E;
+    }
+    .plyr--full-ui input[type=range] {
+        color: #B0292E;
     }
 }
 
@@ -38,7 +48,8 @@
 
 .team__inner-btn {
     text-align: center;
-    a{
+
+    a {
         display: inline-block;
         width: auto;
         font-size: 16px;
@@ -47,7 +58,8 @@
         color: #FFFFFF;
         text-align: center;
         margin-top: 20px;
-        svg{
+
+        svg {
             margin-top: 10px;
         }
     }
