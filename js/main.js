@@ -1,12 +1,14 @@
 
 $(function () {
 
-    const documentHeight = () => {
-        const doc = document.documentElement
-        doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-       }
-       window.addEventListener('resize', documentHeight)
-       documentHeight();
+    if (document.querySelector('.mainscreen')) {
+        const documentHeight = () => {
+            const doc = document.documentElement
+            doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+        }
+        window.addEventListener('resize', documentHeight)
+        documentHeight();
+    }
 
     // burger menu --------- //
     $('.burger-btn').on('click', function () {
@@ -19,8 +21,8 @@ $(function () {
     var swiper = new Swiper(".investment__slider", {
         slidesPerView: 1.1,
         centeredSlides: true,
-        speed:500,
-        loop:true,
+        speed: 500,
+        loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -55,7 +57,6 @@ $(function () {
 
 
     // POPUP --------------------- //
-
     $('.popup__btn').on('click', function () {
         $('body').addClass('hidden');
         var indexPopup = $(this).attr('data-popup');
@@ -77,12 +78,11 @@ $(function () {
     }
 
     // slider ---- //
-
     $('.slider').each(function () {
 
         var swiper = new Swiper(this, {
             spaceBetween: 10,
-            loop:true,
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -110,6 +110,7 @@ $(function () {
         $('.filter__inner').slideToggle('fast');
     });
 
+
     // custom sellect --- //
     $('.custom-select').each(function () {
         let placeholderSelect = $(this).attr('data-placeholder');
@@ -129,13 +130,7 @@ $(function () {
 
 
 
-
-
-
 });
-
-
-
 
 
 
