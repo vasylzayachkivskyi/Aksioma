@@ -30,6 +30,19 @@ $(function () {
 
     });
 
+        // slider catalog ----- //
+        var swiper = new Swiper(".slider-catalog", {
+            slidesPerView: 3.5,
+            speed: 500,
+            breakpoints: {
+                // when window width is >= 375px
+                375: {
+                    slidesPerView: 4.5,
+                },
+            }
+    
+        });
+
     // slider estate ----- //
     var swiperSmall = new Swiper(".estate__slider-small", {
         slidesPerView: 3,
