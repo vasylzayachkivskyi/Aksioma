@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сторінка нерухомості</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
@@ -15,10 +15,15 @@
 
 <body>
     <div class="pagewrapper">
-        <header class="header">
+        <header class="header hide">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -67,7 +72,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -81,130 +86,191 @@
 
             <section class="real-estate sectpadding">
                 <div class="container">
-                    <div class="real-estate__title secttitle">
-                        <a href="#">
-                            <img src="img/svg_icons/arrow_back.svg" alt="back">
-                        </a>
-                        <h1>
-                            вілла “bambetli”
-                        </h1>
-                    </div>
-
-                    <div class="estate__content">
-                        <div class="estate__slider">
-                            <div class="swiper estate__slider-big">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="img/estate_slide1.png" data-fancybox="gallery-estate">
-                                            <img src="img/estate_slide1.png">
-                                        </a>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="real-estate__title secttitle">
+                                <a href="#">
+                                    <img src="img/svg_icons/arrow_back.svg" alt="back">
+                                </a>
+                                <h1>
+                                    вілла “bambetli”
+                                </h1>
+                            </div>
+        
+                            <div class="estate__content">
+                                <div class="estate__slider">
+                                    <div class="swiper estate__slider-big">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="img/estate_slide1.png" data-fancybox="gallery-estate">
+                                                    <img src="img/estate_slide1.png">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/estate_slide2.png" data-fancybox="gallery-estate">
+                                                    <img src="img/estate_slide2.png">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/estate_slide3.png" data-fancybox="gallery-estate">
+                                                    <img src="img/estate_slide3.png">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/estate_slide4.png" data-fancybox="gallery-estate">
+                                                    <img src="img/estate_slide4.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/estate_slide2.png" data-fancybox="gallery-estate">
-                                            <img src="img/estate_slide2.png">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/estate_slide3.png" data-fancybox="gallery-estate">
-                                            <img src="img/estate_slide3.png">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/estate_slide4.png" data-fancybox="gallery-estate">
-                                            <img src="img/estate_slide4.png">
-                                        </a>
+                                    <div class="swiper estate__slider-small">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/estate_slide1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/estate_slide2.png" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/estate_slide3.png" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/estate_slide4.png" />
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                            <div class="swiper estate__slider-small">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/estate_slide1.png" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/estate_slide2.png" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/estate_slide3.png" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/estate_slide4.png" />
-                                        </a>
-                                    </div>
+                                <div class="estate__descr">
+                                    <p>
+                                        Продається готовий прибутковий діючий бізнес!
+                                    </p>
+                                    <p>
+                                        Котеджний комплекс "Bambetli " в с.Татарів з мальовничим краєвидом, розташований в
+                                        екологічно чистій місцевості неподалік річки, що робить його привабливим для туристів з
+                                        вподобаннями як активного, так і пасивного відпочинку.
+                                    </p>
+                                    <p>
+                                        Комплекс включає:
+                                        - два дерев"яні комфортабельні двоповерхові будиночки з усіма зручностями площею по
+                                        300м2, з можливістю розміщення до 8 осіб в кожному;
+                                        - один будинок площею 80м2;
+                                        - огороджена територія, викладена бруківкою;
+                                        - сезонний басейн біля котеджу;
+                                        - земельна ділянка площею 25сот у приватній власності;
+                                        - зручна транспортна розв'язка;
+                                        - налагоджена співпраця з сайтом .com (системою онлайн-бронювання житла), що дає
+                                        можливість постійного залучення клієнтів.
+                                    </p>
+                                    <p>
+                                        Якщо Вас цікавить туристичний бізнес в екологічно чистих Карпатах - звертайтесь!
+                                    </p>
+                                </div>
+                                <div class="estate__btn redbtn">
+                                    <a href="#">
+                                        Дізнатися більше про обʼєкт
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="estate__descr">
-                            <p>
-                                Продається готовий прибутковий діючий бізнес!
-                            </p>
-                            <p>
-                                Котеджний комплекс "Bambetli " в с.Татарів з мальовничим краєвидом, розташований в
-                                екологічно чистій місцевості неподалік річки, що робить його привабливим для туристів з
-                                вподобаннями як активного, так і пасивного відпочинку.
-                            </p>
-                            <p>
-                                Комплекс включає:
-                                - два дерев"яні комфортабельні двоповерхові будиночки з усіма зручностями площею по
-                                300м2, з можливістю розміщення до 8 осіб в кожному;
-                                - один будинок площею 80м2;
-                                - огороджена територія, викладена бруківкою;
-                                - сезонний басейн біля котеджу;
-                                - земельна ділянка площею 25сот у приватній власності;
-                                - зручна транспортна розв'язка;
-                                - налагоджена співпраця з сайтом .com (системою онлайн-бронювання житла), що дає
-                                можливість постійного залучення клієнтів.
-                            </p>
-                            <p>
-                                Якщо Вас цікавить туристичний бізнес в екологічно чистих Карпатах - звертайтесь!
-                            </p>
-                        </div>
-                        <div class="estate__btn redbtn">
-                            <a href="#">
-                                Дізнатися більше про обʼєкт
-                            </a>
-                        </div>
                     </div>
-
                 </div>
             </section>
 
-            <section class="sidebar">
+            <section class="sidebar static-sidebar">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_team.png" media="(min-width: 1200px)">
+                                <img src="img/team_sidebar_mobile.png" alt="image">
+                            </picture>
+                            <a href="team.html">Команда</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_contact.png" media="(min-width: 1200px)">
+                                <img src="img/contacts_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="contacts.html">контакти</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
         </main>
 
 
-        <footer class="footer">
-
+        <footer class="footer static-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>

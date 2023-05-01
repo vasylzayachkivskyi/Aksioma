@@ -27,6 +27,7 @@
         top: 0;
         transform: none;
     }
+
     h2 {
         font-family: 'Mulish';
         margin-bottom: 30px;
@@ -125,6 +126,12 @@
 
 //  formsect 
 
+.formsect {
+    .container-fluid {
+        padding: 0;
+    }
+}
+
 .formsect__wrapper {
     padding: 40px 20px;
     background: #FFFFFF;
@@ -156,6 +163,9 @@
 }
 
 .formsect__wrapper form {
+    margin: 0 auto;
+    max-width: 440px;
+
     input {
         border: none;
         width: 100%;
@@ -197,5 +207,88 @@
         line-height: 20px;
         letter-spacing: 0.04em;
         color: #FFFFFF;
+        transition: .3s;
+
+        &:hover {
+            background: #111111;
+        }
+
+    }
+}
+
+
+// RESPONSIVE ------------------ //
+
+
+@media(min-width: 576px) {
+    .formsect {
+        text-align: center;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .formsect__wrapper {
+        padding: 60px 30px;
+    }
+}
+
+@media(min-width: 992px) {
+    .formsect__header h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .formsect__wrapper form button {
+        font-size: 18px;
+    }
+
+    .about__content h2 {
+        margin-bottom: 20px;
+    }
+
+    .about__content>h2 {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .about__descr {
+        margin-bottom: 100px;
+    }
+
+    .projects {
+        padding-bottom: 80px;
+    }
+
+    .projects__title h2 {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 30px;
+    }
+
+    .about {
+        padding: 0px 0 100px;
+
+        .contacts__box {
+            min-height: auto;
+        }
+    }
+
+    .formsect__header h2 {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .formsect__header p {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .formsect__header {
+        margin-bottom: 60px;
     }
 }

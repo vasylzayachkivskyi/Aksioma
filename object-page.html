@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сторінка об'єкту</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
@@ -19,6 +19,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -67,7 +72,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -103,115 +108,148 @@
 
             <section class="real-estate">
                 <div class="container">
-
-                    <div class="estate__content">
-                        <div class="estate__slider">
-                            <div class="swiper estate__slider-big">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="img/object_slide1.jpg" data-fancybox="gallery-estate">
-                                            <img src="img/object_slide1.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/object_slide2.jpg" data-fancybox="gallery-estate">
-                                            <img src="img/object_slide2.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/object_slide3.jpg" data-fancybox="gallery-estate">
-                                            <img src="img/object_slide3.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/object_slide4.jpg" data-fancybox="gallery-estate">
-                                            <img src="img/object_slide4.jpg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                            <div class="swiper estate__slider-small">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/object_slide1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/object_slide2.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/object_slide3.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/object_slide4.jpg" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="object__descr">
-                            <div class="object__descr-top">
-                                <p class="price">
-                                    100 000 $
-                                </p>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="estate__content">
                                 <a class="save" href="#">
-                                    <img src="img/svg_icons/save_object_icon.svg" alt="save">
+                                    <div class="saved-icon">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="30" cy="30" r="30" fill="white"/>
+                                            <path d="M37.4375 18.3125H22.5625C20.8051 18.3125 19.375 19.7426 19.375 21.5V41.6875C19.3751 41.8864 19.4309 42.0813 19.5363 42.2499C19.6416 42.4186 19.7922 42.5544 19.9709 42.6417C20.1495 42.7291 20.3491 42.7645 20.547 42.744C20.7448 42.7235 20.9329 42.6479 21.0899 42.5258L30 35.5962L38.9101 42.5258C39.0669 42.6483 39.255 42.7242 39.4529 42.7447C39.6508 42.7652 39.8504 42.7294 40.0289 42.6416C40.2076 42.5543 40.3582 42.4186 40.4636 42.2499C40.569 42.0813 40.6249 41.8864 40.625 41.6875V21.5C40.625 19.7426 39.1949 18.3125 37.4375 18.3125Z" fill="#111111"/>
+                                        </svg>                                                    
+                                    </div>
+                                    <div class="not-saved-icon">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="30" cy="30" r="30" fill="black"/>
+                                            <path d="M37.4375 18.3125H22.5625C20.8051 18.3125 19.375 19.7426 19.375 21.5V41.6875C19.3751 41.8864 19.4309 42.0813 19.5363 42.2499C19.6416 42.4186 19.7922 42.5544 19.9709 42.6417C20.1495 42.7291 20.3491 42.7645 20.547 42.744C20.7448 42.7235 20.9329 42.6479 21.0899 42.5258L30 35.5962L38.9101 42.5258C39.0669 42.6483 39.255 42.7242 39.4529 42.7447C39.6508 42.7652 39.8504 42.7294 40.0289 42.6416C40.2076 42.5543 40.3582 42.4186 40.4636 42.2499C40.569 42.0813 40.6249 41.8864 40.625 41.6875V21.5C40.625 19.7426 39.1949 18.3125 37.4375 18.3125ZM39.0312 40.625L31.5938 34.7812C31.5938 34.7812 30.3061 33.719 30 33.7188C29.6939 33.7185 28.4062 34.7812 28.4062 34.7812L20.9688 40.625V21.5C20.9688 20.9146 21.9771 19.9062 22.5625 19.9062H37.4375C38.0229 19.9062 39.0312 20.3833 39.0312 20.9688V30.5312V40.625Z" fill="white"/>
+                                        </svg>                                            
+                                    </div>                                        
                                 </a>
+                                <div class="estate__slider">
+                                    <div class="swiper estate__slider-big">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="img/object_slide1.jpg" data-fancybox="gallery-estate">
+                                                    <img src="img/object_slide1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/object_slide2.jpg" data-fancybox="gallery-estate">
+                                                    <img src="img/object_slide2.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/object_slide3.jpg" data-fancybox="gallery-estate">
+                                                    <img src="img/object_slide3.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/object_slide4.jpg" data-fancybox="gallery-estate">
+                                                    <img src="img/object_slide4.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                    <div class="swiper estate__slider-small">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/object_slide1.jpg" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/object_slide2.jpg" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/object_slide3.jpg" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/object_slide4.jpg" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="object__descr">
+                                    <div class="object__descr-top">
+                                        <h2>затишна квартира 
+                                            в центрі міста</h2>
+                                        <p class="price">
+                                            100 000 $
+                                        </p>
+                                        <a class="save" href="#">
+                                            <div class="saved-icon">
+                                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="30" cy="30" r="30" fill="white"/>
+                                                    <path d="M37.4375 18.3125H22.5625C20.8051 18.3125 19.375 19.7426 19.375 21.5V41.6875C19.3751 41.8864 19.4309 42.0813 19.5363 42.2499C19.6416 42.4186 19.7922 42.5544 19.9709 42.6417C20.1495 42.7291 20.3491 42.7645 20.547 42.744C20.7448 42.7235 20.9329 42.6479 21.0899 42.5258L30 35.5962L38.9101 42.5258C39.0669 42.6483 39.255 42.7242 39.4529 42.7447C39.6508 42.7652 39.8504 42.7294 40.0289 42.6416C40.2076 42.5543 40.3582 42.4186 40.4636 42.2499C40.569 42.0813 40.6249 41.8864 40.625 41.6875V21.5C40.625 19.7426 39.1949 18.3125 37.4375 18.3125Z" fill="#111111"/>
+                                                </svg>                                                    
+                                            </div>
+                                            <div class="not-saved-icon">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="24" cy="24" r="24" fill="black"/>
+                                                    <path d="M31.4375 10.25H16.5625C14.8051 10.25 13.375 11.9325 13.375 14V37.75C13.3751 37.984 13.4309 38.2132 13.5363 38.4117C13.6416 38.6102 13.7922 38.7699 13.9709 38.8726C14.1495 38.9754 14.3491 39.0171 14.547 38.993C14.7448 38.9689 14.9329 38.8799 15.0899 38.7362L24 30.5837L32.9101 38.7362C33.0669 38.8804 33.255 38.9696 33.4529 38.9937C33.6508 39.0178 33.8504 38.9758 34.0289 38.8725C34.2076 38.7698 34.3582 38.6101 34.4636 38.4117C34.569 38.2132 34.6249 37.984 34.625 37.75V14C34.625 11.9325 33.1949 10.25 31.4375 10.25ZM33.0312 36.5L25.5938 29.625C25.5938 29.625 24.3061 28.3753 24 28.375C23.6939 28.3747 22.4062 29.625 22.4062 29.625L14.9688 36.5V14C14.9688 13.3112 15.9771 12.125 16.5625 12.125H31.4375C32.0229 12.125 33.0312 12.6862 33.0312 13.375V24.625V36.5Z" fill="white"/>
+                                                </svg> 
+                                            </div>                                        
+                                        </a>
+                                    </div>
+                                    <div class="object__descr-bottom">
+                                        <h2>
+                                            затишна квартира<br>в центрі міста
+                                        </h2>
+                                        <div class="object__descr-row">
+                                            <img src="img/svg_icons/slider_icon_square.svg" alt="площа">
+                                            <p>Площа: <span>80м²</span></p>
+                                        </div>
+                                        <div class="object__descr-row">
+                                            <img src="img/svg_icons/slider_icon_rooms.svg" alt="площа">
+                                            <p>Кімнат: <span>2</span></p>
+                                        </div>
+                                        <div class="object__descr-row">
+                                            <img src="img/svg_icons/icon_floor.svg" alt="поверх">
+                                            <p>Поверх: <span>2/4</span></p>
+                                        </div>
+                                        <div class="object__descr-row">
+                                            <img src="img/svg_icons/Location_icon_opacity.svg" alt="локація">
+                                            <p>Локація: <span>вул. Незалежності</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="estate__descr">
+                                    <p>
+                                        Продається готовий прибутковий діючий бізнес!
+                                    </p>
+                                    <p>
+                                        Котеджний комплекс "Bambetli " в с.Татарів з мальовничим краєвидом, розташований
+                                        в
+                                        екологічно чистій місцевості неподалік річки, що робить його привабливим для
+                                        туристів з
+                                        вподобаннями як активного, так і пасивного відпочинку.
+                                    </p>
+                                    <p>
+                                        Комплекс включає:
+                                        - два дерев"яні комфортабельні двоповерхові будиночки з усіма зручностями площею
+                                        по
+                                        300м2, з можливістю розміщення до 8 осіб в кожному;
+                                        - один будинок площею 80м2;
+                                        - огороджена територія, викладена бруківкою;
+                                        - сезонний басейн біля котеджу;
+                                        - земельна ділянка площею 25сот у приватній власності;
+                                        - зручна транспортна розв'язка;
+                                        - налагоджена співпраця з сайтом .com (системою онлайн-бронювання житла), що дає
+                                        можливість постійного залучення клієнтів.
+                                    </p>
+                                    <p>
+                                        Якщо Вас цікавить туристичний бізнес в екологічно чистих Карпатах - звертайтесь!
+                                    </p>
+                                </div>
                             </div>
-                            <div class="object__descr-bottom">
-                                <h2>
-                                    затишна квартира<br>в центрі міста
-                                </h2>
-                                <div class="object__descr-row">
-                                    <img src="img/svg_icons/slider_icon_square.svg" alt="площа">
-                                    <p>Площа: <span>80м²</span></p>
-                                </div>
-                                <div class="object__descr-row">
-                                    <img src="img/svg_icons/slider_icon_rooms.svg" alt="площа">
-                                    <p>Кімнат: <span>2</span></p>
-                                </div>
-                                <div class="object__descr-row">
-                                    <img src="img/svg_icons/icon_floor.svg" alt="поверх">
-                                    <p>Поверх: <span>2/4</span></p>
-                                </div>
-                                <div class="object__descr-row">
-                                    <img src="img/svg_icons/slider_icon_rooms.svg" alt="локація">
-                                    <p>Локація: <span>вул. Незалежності</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="estate__descr">
-                            <p>
-                                Продається готовий прибутковий діючий бізнес!
-                            </p>
-                            <p>
-                                Котеджний комплекс "Bambetli " в с.Татарів з мальовничим краєвидом, розташований в
-                                екологічно чистій місцевості неподалік річки, що робить його привабливим для туристів з
-                                вподобаннями як активного, так і пасивного відпочинку.
-                            </p>
-                            <p>
-                                Комплекс включає:
-                                - два дерев"яні комфортабельні двоповерхові будиночки з усіма зручностями площею по
-                                300м2, з можливістю розміщення до 8 осіб в кожному;
-                                - один будинок площею 80м2;
-                                - огороджена територія, викладена бруківкою;
-                                - сезонний басейн біля котеджу;
-                                - земельна ділянка площею 25сот у приватній власності;
-                                - зручна транспортна розв'язка;
-                                - налагоджена співпраця з сайтом .com (системою онлайн-бронювання житла), що дає
-                                можливість постійного залучення клієнтів.
-                            </p>
-                            <p>
-                                Якщо Вас цікавить туристичний бізнес в екологічно чистих Карпатах - звертайтесь!
-                            </p>
                         </div>
                     </div>
 
@@ -220,103 +258,187 @@
 
             <section class="manager object-page">
                 <div class="container">
-                    <div class="manager__title secttitle">
-                        <img src="img/manager_photo.png" alt="photo">
-                        <h1>
-                            крук наталя
-                        </h1>
-                    </div>
-                    <div class="manager__descr">
-                        <p>
-                            Менеджер з продажу Агентств нерухомості "ЖитлоМаркет".
-                            Досвід у сфері нерухомості з 2019 р.
-                        </p>
-                        <p>
-                            Всього пропозицій: <span>7</span>
-                    </div>
-                    <div class="manager__contacts">
-                        <div class="manager__contacts-left">
-                            <a href="tel:+ 38 (067) 671 21 12">+ 38 (067) 671 21 12</a>
-                            <a href="tel:+ 38 (050) 671 21 12">+ 38 (050) 671 21 12</a>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="manager__inner">
+                                <div class="manager__title secttitle">
+                                    <div class="manager__avatar">
+                                        <img src="img/manager_photo.png" alt="photo">
+                                    </div>
+                                    <h1>
+                                        крук наталя
+                                    </h1>
+                                </div>
+                                <div class="manager__info">
+                                    <h1>крук наталя</h1>
+                                    <div class="manager__descr">
+                                        <p>
+                                            Менеджер з продажу Агентств нерухомості "ЖитлоМаркет".
+                                            Досвід у сфері нерухомості з 2019 р.
+                                        </p>
+                                        <p>
+                                            Всього пропозицій: <span>7</span>
+                                    </div>
+                                    <div class="manager__contacts">
+                                        <div class="manager__contacts-left">
+                                            <a href="tel:+ 38 (067) 671 21 12">+ 38 (067) 671 21 12</a>
+                                            <a href="tel:+ 38 (050) 671 21 12">+ 38 (050) 671 21 12</a>
+                                        </div>
+                                        <div class="manager__contacts-right">
+                                            <a href="#">
+                                                <img src="img/svg_icons/telegram.svg" alt="icon">
+                                            </a>
+                                            <a href="#">
+                                                <img src="img/svg_icons/viber.svg" alt="icon">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="manager__btn redbtn">
+                                        <a href="#">
+                                            Замовити дзвінок
+                                        </a>
+                                    </div>
+                                    <div class="manager__btn whitebtn">
+                                        <a href="#">
+                                            Замовити дзвінок
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="manager__contacts-right">
-                            <a href="#">
-                                <img src="img/svg_icons/telegram.svg" alt="icon">
-                            </a>
-                            <a href="#">
-                                <img src="img/svg_icons/viber.svg" alt="icon">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="manager__btn redbtn">
-                        <a href="#">
-                            Замовити дзвінок
-                        </a>
                     </div>
                 </div>
             </section>
 
             <section class="map">
                 <div class="container">
-                    <div class="map__title">
-                        <h2>
-                            переглянути обʼєкт на мапi
-                        </h2>
-                    </div>
-                    <div class="map__content">
-                        <a href="https://goo.gl/maps/M18F4CnvfihMP3XX8" target="_blank">
-                            <img src="img/map.jpg" alt="map">
-                        </a>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="map__title">
+                                <h2>
+                                    переглянути обʼєкт на мапi
+                                </h2>
+                            </div>
+                            <div class="map__content">
+                                <a href="https://goo.gl/maps/M18F4CnvfihMP3XX8" target="_blank">
+                                    <img src="img/map.jpg" alt="map">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="formsect">
-                <div class="formsect__wrapper">
-                    <div class="formsect__header">
-                        <h2>
-                            не знайшли те, що хотіли?
-                        </h2>
-                        <p>
-                            Заповніть коротку форму і ми підберемо для Вас найкращі варіанти.
-                        </p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="formsect__wrapper">
+                                <div class="formsect__header">
+                                    <h2>
+                                        не знайшли те, що хотіли?
+                                    </h2>
+                                    <p>
+                                        Заповніть коротку форму і ми підберемо для Вас найкращі варіанти.
+                                    </p>
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="Iмʼя">
+                                    <input type="text" placeholder="Номер телефону">
+                                    <input type="text" placeholder="Посилання на соціальну мережу">
+                                    <button>Надіслати!</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <form>
-                        <input type="text" placeholder="Iмʼя">
-                        <input type="text" placeholder="Номер телефону">
-                        <input type="text" placeholder="Посилання на соціальну мережу">
-                        <button>Надіслати!</button>
-                    </form>
                 </div>
             </section>
 
-            <section class="sidebar" style="border: none;">
+            <section class="sidebar static-sidebar">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_investment.png" media="(min-width: 1200px)">
+                                <img src="img/investment_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="investment.html">інвестиції</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_team.png" media="(min-width: 1200px)">
+                                <img src="img/team_sidebar_mobile.png" alt="image">
+                            </picture>
+                            <a href="team.html">Команда</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
         </main>
 
 
-        <footer class="footer">
-
+        <footer class="footer static-footer" style="border:none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>

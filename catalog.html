@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
@@ -21,6 +21,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -69,7 +74,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -98,42 +103,63 @@
                 </div>
             </section>
 
-
             <section class="catalog">
                 <div class="container">
-                    <div class="catalog__title secttitle">
-                        <h1>
-                            Каталог
-                        </h1>
-                    </div>
-                    <div class="catalog__top">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="catalog__top-item">
-                                    <img src="img/catalog_item1.png" alt="image">
-                                    <a href="#">будинки</a>
-                                </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="catalog__title secttitle">
+                                <a class="save" href="#">
+                                    <div class="saved-icon">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="30" cy="30" r="30" fill="white"/>
+                                            <path d="M37.4375 18.3125H22.5625C20.8051 18.3125 19.375 19.7426 19.375 21.5V41.6875C19.3751 41.8864 19.4309 42.0813 19.5363 42.2499C19.6416 42.4186 19.7922 42.5544 19.9709 42.6417C20.1495 42.7291 20.3491 42.7645 20.547 42.744C20.7448 42.7235 20.9329 42.6479 21.0899 42.5258L30 35.5962L38.9101 42.5258C39.0669 42.6483 39.255 42.7242 39.4529 42.7447C39.6508 42.7652 39.8504 42.7294 40.0289 42.6416C40.2076 42.5543 40.3582 42.4186 40.4636 42.2499C40.569 42.0813 40.6249 41.8864 40.625 41.6875V21.5C40.625 19.7426 39.1949 18.3125 37.4375 18.3125Z" fill="#111111"/>
+                                        </svg>                                                    
+                                    </div>
+                                    <div class="not-saved-icon">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="30" cy="30" r="30" fill="black"/>
+                                            <path d="M37.4375 18.3125H22.5625C20.8051 18.3125 19.375 19.7426 19.375 21.5V41.6875C19.3751 41.8864 19.4309 42.0813 19.5363 42.2499C19.6416 42.4186 19.7922 42.5544 19.9709 42.6417C20.1495 42.7291 20.3491 42.7645 20.547 42.744C20.7448 42.7235 20.9329 42.6479 21.0899 42.5258L30 35.5962L38.9101 42.5258C39.0669 42.6483 39.255 42.7242 39.4529 42.7447C39.6508 42.7652 39.8504 42.7294 40.0289 42.6416C40.2076 42.5543 40.3582 42.4186 40.4636 42.2499C40.569 42.0813 40.6249 41.8864 40.625 41.6875V21.5C40.625 19.7426 39.1949 18.3125 37.4375 18.3125ZM39.0312 40.625L31.5938 34.7812C31.5938 34.7812 30.3061 33.719 30 33.7188C29.6939 33.7185 28.4062 34.7812 28.4062 34.7812L20.9688 40.625V21.5C20.9688 20.9146 21.9771 19.9062 22.5625 19.9062H37.4375C38.0229 19.9062 39.0312 20.3833 39.0312 20.9688V30.5312V40.625Z" fill="white"/>
+                                        </svg>                                            
+                                    </div>                                        
+                                </a>
+                                <h1>
+                                    Каталог
+                                </h1>
                             </div>
-                            <div class="col-4">
-                                <div class="catalog__top-item">
-                                    <img src="img/catalog_item2.png" alt="image">
-                                    <a href="#">квартири</a>
-                                </div>
-                            </div>
-                            <div class="col-4 d-flex flex-column justify-content-between">
-                                <div class="catalog__top-item halfheight">
-                                    <img src="img/catalog_item3.png" alt="image">
-                                    <a href="#">котеджні містечка</a>
-                                </div>
-                                <div class="catalog__top-item halfheight">
-                                    <img src="img/catalog_item4.png" alt="image">
-                                    <a href="#">земельні ділянки</a>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="catalog__top-item">
-                                    <img src="img/catalog_item5.png" alt="image">
-                                    <a href="#">комерційна нерухомість</a>
+                            <div class="catalog__top">
+                                <div class="row">
+                                    <div class="col-4 col-xxl-3">
+                                        <div class="catalog__top-item">
+                                            <img src="img/catalog_item1.png" alt="image">
+                                            <a href="#">будинки</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-xxl-3">
+                                        <div class="catalog__top-item">
+                                            <img src="img/catalog_item2.png" alt="image">
+                                            <a href="#">квартири</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-xxl-6 d-flex flex-column flex-xxl-row justify-content-between flex-wrap">
+                                        <div class="catalog__top-item tprow">
+                                            <img src="img/catalog_item5.png" alt="image">
+                                            <a href="#">комерційна нерухомість</a>
+                                        </div>
+                                        <div class="catalog__top-item halfheight">
+                                            <img src="img/catalog_item3.png" alt="image">
+                                            <a href="#">котеджні містечка</a>
+                                        </div>
+                                        <div class="catalog__top-item halfheight">
+                                            <img src="img/catalog_item4.png" alt="image">
+                                            <a href="#">земельні ділянки</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="catalog__top-item btmrow">
+                                            <img src="img/catalog_item5.png" alt="image">
+                                            <a href="#">комерційна нерухомість</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -194,303 +220,561 @@
 
             <section class="proposition">
                 <div class="container">
-                    <div class="filter">
-                        <div class="filter__head">
-                            <div class="counter">
-                                5
-                            </div>
-                            <p class="hide-filter">Розгорнути фільтр</a>
-                            <p class="open-filter">Згорнути фільтр</p>
-                            <img src="img/svg_icons/filter_icon.svg" alt="image">
-                        </div>
-                        <div class="filter__inner">
-                            <form>
-                                <select class="custom-select" data-placeholder="Тип операції">
-                                    <option value=""></option>
-                                    <option value="операція 1">операція 1</option>
-                                    <option value="операція 2">операція 2</option>
-                                    <option value="операція 3">операція 3</option>
-                                </select>
-                                <select class="custom-select" data-placeholder="Розташування">
-                                    <option value=""></option>
-                                </select>
-                                <select class="custom-select" data-placeholder="Тип нерухомості">
-                                    <option value=""></option>
-                                </select>
-                                <select class="custom-select" data-placeholder="Кімнат">
-                                    <option value=""></option>
-                                </select>
-                                <select class="custom-select" data-placeholder="Площа, м²">
-                                    <option value=""></option>
-                                </select>
-                                <select class="custom-select" data-placeholder="Ціна, $">
-                                    <option value=""></option>
-                                </select>
-
-                                <button>
-                                    Шукати
-                                </button>
-                            </form>
-                            <a href="#" class="popup__btn" data-popup="search-popup">Розширений пошук</a>
-                        </div>
-                    </div>
-                    <div class="proposition__inner">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="proposition__item">
-                                    <a class="save_icon" href="#">
-                                        <img src="img/svg_icons/slider_save_icon.svg" alt="">
-                                    </a>
-                                    <div class="swiper slider">
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
-                                                    </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
-                                                    </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
-                                                    </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="slider__info">
-                                        <p>
-                                            1к. квартира в новобудові за вигідною ціною
-                                        </p>
-                                    </div>
-                                    <div class="slider__descr">
-                                        <div class="slider__descr-row">
-                                            <p>
-                                                <img src="img/svg_icons/icon_floor.svg" alt="icon">
-                                                2/4
-                                            </p>
-                                            <p>
-                                                <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
-                                                80м²
-                                            </p>
-                                            <p>
-                                                <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
-                                                2 кім.
-                                            </p>
-                                        </div>
-                                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="filter-desctope">
+                                <div class="filter__inner">
+                                    <form>
+                                        <select class="custom-select" data-placeholder="Тип операції">
+                                            <option value=""></option>
+                                            <option value="операція 1">операція 1</option>
+                                            <option value="операція 2">операція 2</option>
+                                            <option value="операція 3">операція 3</option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Тип нерухомості">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Площа, м²">
+                                            <option value=""></option>
+                                        </select>
+                                        <button>
+                                            Шукати
+                                        </button>
+                                        <select class="custom-select" data-placeholder="Розташування">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Кімнат">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Ціна, $">
+                                            <option value=""></option>
+                                        </select>
+                                        <a href="#" class="popup__btn" data-popup="search-popup">Розширений пошук</a>
+                                    </form>
                                 </div>
                             </div>
-
-                            <div class="col-12">
-                                <div class="proposition__item">
-                                    <a class="save_icon" href="#">
-                                        <img src="img/svg_icons/slider_save_icon.svg" alt="">
-                                    </a>
-                                    <div class="swiper slider">
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
-                                                    </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
-                                                    </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
-                                                    </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
-                                        </div>
+                            <div class="filter">
+                                <div class="filter__head">
+                                    <div class="counter">
+                                        5
                                     </div>
-                                    <div class="slider__info">
-                                        <p>
-                                            1к. квартира в новобудові за вигідною ціною
-                                        </p>
-                                    </div>
-                                    <div class="slider__descr">
-                                        <div class="slider__descr-row">
-                                            <p>
-                                                <img src="img/svg_icons/icon_floor.svg" alt="icon">
-                                                2/4
-                                            </p>
-                                            <p>
-                                                <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
-                                                80м²
-                                            </p>
-                                            <p>
-                                                <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
-                                                2 кім.
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <p class="hide-filter">Розгорнути фільтр</a>
+                                    <p class="open-filter">Згорнути фільтр</p>
+                                    <img src="img/svg_icons/filter_icon.svg" alt="image">
+                                </div>
+                                <div class="filter__inner">
+                                    <form>
+                                        <select class="custom-select" data-placeholder="Тип операції">
+                                            <option value=""></option>
+                                            <option value="операція 1">операція 1</option>
+                                            <option value="операція 2">операція 2</option>
+                                            <option value="операція 3">операція 3</option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Розташування">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Тип нерухомості">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Кімнат">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Площа, м²">
+                                            <option value=""></option>
+                                        </select>
+                                        <select class="custom-select" data-placeholder="Ціна, $">
+                                            <option value=""></option>
+                                        </select>
+
+                                        <button>
+                                            Шукати
+                                        </button>
+                                    </form>
+                                    <a href="#" class="popup__btn" data-popup="search-popup">Розширений пошук</a>
                                 </div>
                             </div>
-
-                            <div class="col-12">
-                                <div class="proposition__item">
-                                    <a class="save_icon" href="#">
-                                        <img src="img/svg_icons/slider_save_icon.svg" alt="">
-                                    </a>
-                                    <div class="swiper slider">
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
+                            <div class="proposition__inner">
+                                <div class="row">
+                                    <div class="col-12 col-xl-4 col-md-6">
+                                        <div class="proposition__item">
+                                            <a class="save_icon" href="#">
+                                                <img class="not-saved" src="img/svg_icons/slider_save_icon.svg" alt="">
+                                                <img class="saved" src="img/svg_icons/saving.svg" alt="">
+                                            </a>
+                                            <div class="swiper slider">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
                                                     </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
 
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
                                                     </div>
-                                                </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
-                                            </div>
 
-                                            <div class="swiper-slide">
-                                                <div class="description">
-                                                    <div class="description__row">
-                                                        <span>Продаж</span>
-                                                        <p>280 000 грн</p>
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
                                                     </div>
+
+
+
                                                 </div>
-                                                <img src="img/proposition_slide1.png" alt="img">
                                             </div>
-
-
-
+                                            <div class="slider__info">
+                                                <p>
+                                                    1к. квартира в новобудові за вигідною ціною
+                                                </p>
+                                            </div>
+                                            <div class="slider__descr">
+                                                <div class="slider__descr-row">
+                                                    <p>
+                                                        <img src="img/svg_icons/icon_floor.svg" alt="icon">
+                                                        2/4
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
+                                                        80м²
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
+                                                        2 кім.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="slider__info">
+
+                                    <div class="col-12 col-xl-4 col-md-6">
+                                        <div class="proposition__item">
+                                            <a class="save_icon" href="#">
+                                                <img class="not-saved" src="img/svg_icons/slider_save_icon.svg" alt="">
+                                                <img class="saved" src="img/svg_icons/saving.svg" alt="">
+                                            </a>
+                                            <div class="swiper slider">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider__info">
+                                                <p>
+                                                    1к. квартира в новобудові за вигідною ціною
+                                                </p>
+                                            </div>
+                                            <div class="slider__descr">
+                                                <div class="slider__descr-row">
+                                                    <p>
+                                                        <img src="img/svg_icons/icon_floor.svg" alt="icon">
+                                                        2/4
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
+                                                        80м²
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
+                                                        2 кім.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-4 col-md-6">
+                                        <div class="proposition__item">
+                                            <a class="save_icon" href="#">
+                                                <img class="not-saved" src="img/svg_icons/slider_save_icon.svg" alt="">
+                                                <img class="saved" src="img/svg_icons/saving.svg" alt="">
+                                            </a>
+                                            <div class="swiper slider">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="slider__info">
+                                                <p>
+                                                    1к. квартира в новобудові за вигідною ціною
+                                                </p>
+                                            </div>
+                                            <div class="slider__descr">
+                                                <div class="slider__descr-row">
+                                                    <p>
+                                                        <img src="img/svg_icons/icon_floor.svg" alt="icon">
+                                                        2/4
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
+                                                        80м²
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
+                                                        2 кім.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-4 col-md-6">
+                                        <div class="proposition__item">
+                                            <a class="save_icon" href="#">
+                                                <img class="not-saved" src="img/svg_icons/slider_save_icon.svg" alt="">
+                                                <img class="saved" src="img/svg_icons/saving.svg" alt="">
+                                            </a>
+                                            <div class="swiper slider">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="slider__info">
+                                                <p>
+                                                    1к. квартира в новобудові за вигідною ціною
+                                                </p>
+                                            </div>
+                                            <div class="slider__descr">
+                                                <div class="slider__descr-row">
+                                                    <p>
+                                                        <img src="img/svg_icons/icon_floor.svg" alt="icon">
+                                                        2/4
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
+                                                        80м²
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
+                                                        2 кім.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-4 col-md-6">
+                                        <div class="proposition__item">
+                                            <a class="save_icon" href="#">
+                                                <img class="not-saved" src="img/svg_icons/slider_save_icon.svg" alt="">
+                                                <img class="saved" src="img/svg_icons/saving.svg" alt="">
+                                            </a>
+                                            <div class="swiper slider">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider__info">
+                                                <p>
+                                                    1к. квартира в новобудові за вигідною ціною
+                                                </p>
+                                            </div>
+                                            <div class="slider__descr">
+                                                <div class="slider__descr-row">
+                                                    <p>
+                                                        <img src="img/svg_icons/icon_floor.svg" alt="icon">
+                                                        2/4
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
+                                                        80м²
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
+                                                        2 кім.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-4 col-md-6">
+                                        <div class="proposition__item">
+                                            <a class="save_icon" href="#">
+                                                <img class="not-saved" src="img/svg_icons/slider_save_icon.svg" alt="">
+                                                <img class="saved" src="img/svg_icons/saving.svg" alt="">
+                                            </a>
+                                            <div class="swiper slider">
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="description">
+                                                            <div class="description__row">
+                                                                <span>Продаж</span>
+                                                                <p>280 000 грн</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/proposition_slide1.png" alt="img">
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="slider__info">
+                                                <p>
+                                                    1к. квартира в новобудові за вигідною ціною
+                                                </p>
+                                            </div>
+                                            <div class="slider__descr">
+                                                <div class="slider__descr-row">
+                                                    <p>
+                                                        <img src="img/svg_icons/icon_floor.svg" alt="icon">
+                                                        2/4
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
+                                                        80м²
+                                                    </p>
+                                                    <p>
+                                                        <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
+                                                        2 кім.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="team__inner-btn">
+                                    <a href="#">
                                         <p>
-                                            1к. квартира в новобудові за вигідною ціною
+                                            Переглянути більше
                                         </p>
-                                    </div>
-                                    <div class="slider__descr">
-                                        <div class="slider__descr-row">
-                                            <p>
-                                                <img src="img/svg_icons/icon_floor.svg" alt="icon">
-                                                2/4
-                                            </p>
-                                            <p>
-                                                <img src="img/svg_icons/slider_icon_square.svg" alt="icon">
-                                                80м²
-                                            </p>
-                                            <p>
-                                                <img src="img/svg_icons/slider_icon_rooms.svg" alt="icon">
-                                                2 кім.
-                                            </p>
-                                        </div>
-                                    </div>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 6.17957L17.6416 3.82129L10 11.4629L2.35836 3.82129L0 6.17957L10 16.1796L20 6.17957Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
-
-
-                        </div>
-                        <div class="team__inner-btn">
-                            <a href="#">
-                                <p>
-                                    Переглянути більше
-                                </p>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M20 6.17957L17.6416 3.82129L10 11.4629L2.35836 3.82129L0 6.17957L10 16.1796L20 6.17957Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="formsect">
-                <div class="formsect__wrapper">
-                    <div class="formsect__header">
-                        <h2>
-                            не знайшли те, що хотіли?
-                        </h2>
-                        <p>
-                            Заповніть коротку форму і ми підберемо для Вас найкращі варіанти.
-                        </p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="formsect__wrapper">
+                                <div class="formsect__header">
+                                    <h2>
+                                        не знайшли те, що хотіли?
+                                    </h2>
+                                    <p>
+                                        Заповніть коротку форму і ми підберемо для Вас найкращі варіанти.
+                                    </p>
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="Iмʼя">
+                                    <input type="text" placeholder="Номер телефону">
+                                    <input type="text" placeholder="Посилання на соціальну мережу">
+                                    <button>Надіслати!</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <form>
-                        <input type="text" placeholder="Iмʼя">
-                        <input type="text" placeholder="Номер телефону">
-                        <input type="text" placeholder="Посилання на соціальну мережу">
-                        <button>Надіслати!</button>
-                    </form>
                 </div>
             </section>
 
-            <section class="sidebar" style="border: none;">
+            <section class="sidebar hidden-sidebar hide" style="border:none">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_investment.png" media="(min-width: 1200px)">
+                                <img src="img/investment_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="investment.html">інвестиції</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_team.png" media="(min-width: 1200px)">
+                                <img src="img/team_sidebar_mobile.png" alt="image">
+                            </picture>
+                            <a href="team.html">Команда</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
@@ -500,10 +784,14 @@
         <div class="popup__window search-popup">
             <div class="container">
                 <div class="popup__wrapper">
-                    <div class="popup__close">
-                        <img src="img/svg_icons/close_popup.svg" alt="close">
-                    </div>
+                    
                     <div class="popup__body">
+                        <div class="popup__close">
+                            <picture>
+                                <source srcset="img/svg_icons/close_black_icon.svg" media="(min-width: 992px)">
+                                <img src="img/svg_icons/close_popup.svg" alt="close">
+                            </picture>
+                        </div>
                         <div class="popup__title">
                             <h2>
                                 розширений пошук
@@ -601,8 +889,53 @@
         </div>
 
 
-        <footer class="footer">
-
+        <footer class="footer static-footer" style="border:none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>

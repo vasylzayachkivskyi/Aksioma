@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Інвестиції</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,6 +18,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -66,7 +71,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -77,110 +82,236 @@
         </header>
 
         <main class="main">
+
+
             <section class="investment sectpadding">
                 <div class="container">
-                    <div class="investment__title secttitle">
-                        <h1>
-                            інвестиції
-                        </h1>
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="investment__title secttitle">
+                                <h1>
+                                    інвестиції
+                                </h1>
+                            </div>
+                            <div class="investment__descr">
+                                <p>
+                                    Ми працюємо на ринку нерухомості понад 10 років. І за роки роботи, добре розуміємо,
+                                    що
+                                    будівництво – це уже не просто стіни та бетон.
+                                </p>
+                                <p>
+                                    Наша мета – створення особливих проектів, що відповідають сучасним потребам ринку та
+                                    поєднують в
+                                    собі продуману концепцію забудови та інфраструктури.
+                                </p>
+                            </div>
+                            <div class="investment__btns">
+                                <a class="popup__btn" data-popup="project-popup" href="#">Пошук проекту</a>
+                                <a class="popup__btn" data-popup="investment-popup" href="#">Пошук інвестора</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="investment__descr">
-                        <p>
-                            Ми працюємо на ринку нерухомості понад 10 років. І за роки роботи, добре розуміємо, що
-                            будівництво – це уже не просто стіни та бетон.
-                        </p>
-                        <p>
-                            Наша мета – створення особливих проектів, що відповідають сучасним потребам ринку та
-                            поєднують в
-                            собі продуману концепцію забудови та інфраструктури.
-                        </p>
-                    </div>
-                    <div class="investment__btns">
-                        <a class="popup__btn" data-popup="project-popup" href="#">Пошук проекту</a>
-                        <a class="popup__btn" data-popup="investment-popup" href="#">Пошук інвестора</a>
-                    </div>
+                </div>
 
-                    <div class="swiper investment__slider">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="investment__slider-item">
-                                    <img src="img/investment_slider_img.png" alt="image">
-                                    <a href="real-estate.html">
-                                        <p>закордонна<br>нерухомість</p>
-                                        <span>Європа та США</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="investment__slider-item">
-                                    <img src="img/investment_slider_img1.png" alt="image">
-                                    <a href="real-estate.html">
-                                        <p>готовий<br>бізнес</p>
-                                        <span>Україна</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="investment__slider-item">
-                                    <img src="img/investment_slider_img2.png" alt="image">
-                                    <a href="real-estate.html">
-                                        <p>туристична<br>нерухомість</p>
-                                        <span>Європа </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="investment__slider-item">
-                                    <img src="img/investment_slider_img.png" alt="image">
-                                    <a href="real-estate.html">
-                                        <p>закордонна<br>нерухомість</p>
-                                        <span>Європа та США</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="investment__slider-item">
-                                    <img src="img/investment_slider_img1.png" alt="image">
-                                    <a href="real-estate.html">
-                                        <p>готовий<br>бізнес</p>
-                                        <span>Україна</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="investment__slider-item">
-                                    <img src="img/investment_slider_img2.png" alt="image">
-                                    <a href="real-estate.html">
-                                        <p>туристична<br>нерухомість</p>
-                                        <span>Європа </span>
-                                    </a>
+                <div class="investment__bottom">
+                    <div class="container-xl">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="swiper investment__slider">
+                                    <div class="swiper-button-next">
+                                        <div class="mobile-arrow">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="20" cy="20" r="20" fill="white" />
+                                                <path d="M16.7275 11.6362L26.1821 19.9999L16.7275 28.3635"
+                                                    stroke="#111111" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="desctope-arrow">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="25" cy="25" r="25" fill="white" />
+                                                <path
+                                                    d="M21.4154 13L18.5854 15.83L27.7554 25L18.5854 34.17L21.4154 37L33.4154 25L21.4154 13Z"
+                                                    fill="#111111" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <div class="mobile-arrow">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)"
+                                                    fill="white" />
+                                                <path d="M23.2725 28.3638L13.8179 20.0001L23.2725 11.6365"
+                                                    stroke="#111111" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="desctope-arrow">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="25" cy="25" r="25" transform="rotate(-180 25 25)"
+                                                    fill="white" />
+                                                <g clip-path="url(#clip0_1464_53920)">
+                                                    <path
+                                                        d="M28.5841 37L31.4141 34.17L22.2441 25L31.4141 15.83L28.5841 13L16.5841 25L28.5841 37Z"
+                                                        fill="#111111" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1464_53920">
+                                                        <rect width="24" height="24" fill="white"
+                                                            transform="matrix(-1 0 0 -1 37 37)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="investment__slider-item">
+                                                <img src="img/investment_slider_img.png" alt="image">
+                                                <a href="real-estate.html">
+                                                    <p>закордонна<br>нерухомість</p>
+                                                    <span>Європа та США</span>
+                                                    <div class="arrow">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.26984 0L5.73242 3.53754L17.1949 15L5.73242 26.4625L9.26984 30L24.2698 15L9.26984 0Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="investment__slider-item">
+                                                <img src="img/investment_slider_img1.png" alt="image">
+                                                <a href="real-estate.html">
+                                                    <p>готовий<br>бізнес</p>
+                                                    <span>Україна</span>
+                                                    <div class="arrow">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.26984 0L5.73242 3.53754L17.1949 15L5.73242 26.4625L9.26984 30L24.2698 15L9.26984 0Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="investment__slider-item">
+                                                <img src="img/investment_slider_img2.png" alt="image">
+                                                <a href="real-estate.html">
+                                                    <p>туристична<br>нерухомість</p>
+                                                    <span>Європа </span>
+                                                    <div class="arrow">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.26984 0L5.73242 3.53754L17.1949 15L5.73242 26.4625L9.26984 30L24.2698 15L9.26984 0Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="investment__slider-item">
+                                                <img src="img/investment_slider_img.png" alt="image">
+                                                <a href="real-estate.html">
+                                                    <p>закордонна<br>нерухомість</p>
+                                                    <span>Європа та США</span>
+                                                    <div class="arrow">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.26984 0L5.73242 3.53754L17.1949 15L5.73242 26.4625L9.26984 30L24.2698 15L9.26984 0Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="investment__slider-item">
+                                                <img src="img/investment_slider_img1.png" alt="image">
+                                                <a href="real-estate.html">
+                                                    <p>готовий<br>бізнес</p>
+                                                    <span>Україна</span>
+                                                    <div class="arrow">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.26984 0L5.73242 3.53754L17.1949 15L5.73242 26.4625L9.26984 30L24.2698 15L9.26984 0Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="investment__slider-item">
+                                                <img src="img/investment_slider_img2.png" alt="image">
+                                                <a href="real-estate.html">
+                                                    <p>туристична<br>нерухомість</p>
+                                                    <span>Європа </span>
+                                                    <div class="arrow">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.26984 0L5.73242 3.53754L17.1949 15L5.73242 26.4625L9.26984 30L24.2698 15L9.26984 0Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="sidebar">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_contact.png" media="(min-width: 1200px)">
+                                <img src="img/contacts_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="contacts.html">контакти</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_team.png" media="(min-width: 1200px)">
+                                <img src="img/team_sidebar_mobile.png" alt="image">
+                            </picture>
+                            <a href="team.html">Команда</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
@@ -234,10 +365,10 @@
                                 <input type="text" class="phoneinp" placeholder="Номер телефону" required>
                                 <input type="text" class="phoneinp" placeholder="Ваш коментар" required>
                                 <!-- <button type="submit">Надіслати!</button> -->
-                                
 
-                                 <!-- thankyou page example -->
-                                 <a class="popup__btn" data-popup="thankyou-popup">Надіслати!</a>
+
+                                <!-- thankyou page example -->
+                                <a class="popup__btn" data-popup="thankyou-popup">Надіслати!</a>
                             </form>
                         </div>
                     </div>
@@ -263,7 +394,7 @@
                         </div>
                         <div class="popup__descr">
                             <p>
-                                Наш менеджер звʼяжеться з Вами<br>найближчим часом для уточнення<br>деталей.
+                                Наш менеджер звʼяжеться з Вами найближчим часом для уточнення деталей.
                             </p>
                         </div>
                     </div>
@@ -271,8 +402,54 @@
             </div>
         </div>
 
-        <footer class="footer">
 
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>

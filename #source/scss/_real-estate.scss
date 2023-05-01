@@ -26,7 +26,7 @@
     overflow: hidden;
     margin-bottom: 20px;
 
-    img {
+    >img {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -47,7 +47,7 @@
         color: #FFFFFF;
         position: relative;
         z-index: 1;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(greg-althoff-Wy9aq4yMq_g-unsplash.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 
         p {
             font-weight: 800;
@@ -62,6 +62,10 @@
         span {
             font-size: 16px;
             line-height: 24px;
+
+            img {
+                display: none;
+            }
         }
     }
 }
@@ -87,10 +91,12 @@
 
 .estate__slider {
     margin-bottom: 40px;
+
     .estate__slider-big {
         margin-bottom: 10px;
+
         .swiper-slide {
-        height: 220px;
+            height: 220px;
         }
     }
 
@@ -98,7 +104,8 @@
         .swiper-slide {
             height: 60px;
             transition: .3s;
-            a:after{
+
+            a:after {
                 position: absolute;
                 content: '';
                 width: 100%;
@@ -111,7 +118,7 @@
         }
 
         .swiper-slide-thumb-active {
-            a:after{
+            a:after {
                 opacity: 0;
             }
         }
@@ -162,18 +169,21 @@
     }
 }
 
-.fancybox__nav .f-button{
+.fancybox__nav .f-button {
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    svg{
+
+    svg {
         opacity: 0;
     }
-    &.is-prev{
+
+    &.is-prev {
         background-image: url(../img/svg_icons/slide_arrow_prev.svg);
         margin-left: 10px;
     }
-    &.is-next{
+
+    &.is-next {
         background-image: url(../img/svg_icons/slide_arrow_next.svg);
         margin-right: 10px;
     }
@@ -182,4 +192,114 @@
 .fancybox__slide.has-image>.fancybox__content {
     border-radius: 20px;
     overflow: hidden;
+}
+
+
+// RESPONSIVE ---------------- //
+
+@media (min-width: 576px) {
+    .estate__slider .estate__slider-big .swiper-slide {
+        height: 300px;
+    }
+    .estate__slider .estate__slider-small .swiper-slide {
+        height: 80px;
+    }
+    .estate__slider .estate__slider-big {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .estate__slider .estate__slider-small .swiper-slide {
+        height: 100px;
+    }
+}
+@media (min-width: 992px) {
+    .estate__slider .estate__slider-big .swiper-slide {
+        height: 400px;
+    }
+    .estate__slider .estate__slider-small .swiper-slide {
+        height: 110px;
+    }
+    .real-estate__title {
+        margin-bottom: 30px;
+    }
+    .estate__slider .estate__slider-big {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1200px) {
+
+    .estate__slider {
+        margin-bottom: 60px;
+    }
+
+    .estate__slider .estate__slider-big .swiper-slide {
+        height: 440px;
+    }
+
+
+    .real-estate__item {
+        a {
+            background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #1D1D1D 100%);
+            padding: 15px;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            span img {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background-size: cover;
+                margin-right: 4px;
+            }
+        }
+
+        >img {
+            transition: .4s;
+        }
+
+        &:hover {
+            >img {
+                transform: scale(1.2);
+                filter: brightness(40%);
+            }
+        }
+    }
+
+    .estate__content {
+        position: relative;
+    }
+
+    .estate__btn a{
+        position: absolute;
+        top: 630px;
+        left: 50%;
+        z-index: 77;
+        transform: translateX(-50%);
+    }
+
+    .estate__btn a,
+    .real-estate__btn a {
+        transition: .3s;
+        font-size: 18px;
+
+        &:hover {
+            background: #fff;
+            color: #111;
+        }
+    }
+
+    .real-estate__title {
+
+        h1 {
+            font-size: 36px;
+            line-height: 62px;
+        }
+
+        a {
+            margin-right: 20px;
+        }
+    }
+
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обрані</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
@@ -20,6 +20,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -68,7 +73,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -82,41 +87,48 @@
 
             <section class="breadcrumbs">
                 <div class="container">
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                                Головна
-                            </a>
-                        </li>
-                        <li>
-                            <span>
-                                Обране
-                            </span>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Головна
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        Обране
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-
-
             <section class="catalog">
                 <div class="container">
-                    <div class="catalog__title secttitle">
-                        <h1>
-                            обрані
-                        </h1>
-                    </div>
-                    <div class="catalog__notchosen">
-                        <h2>
-                            ви ще не додали до обраних жодного обʼєкта!
-                        </h2>
-                        <p>
-                            Тут зберігатимуться оголошення, які ви обрали.
-                        </p>
-                        <div class="redbtn">
-                            <a href="#">
-                                Перейти до каталогa
-                            </a>
+
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="catalog__title secttitle">
+                                <h1>
+                                    обрані
+                                </h1>
+                            </div>
+                            <div class="catalog__notchosen">
+                                <h2>
+                                    ви ще не додали до обраних жодного обʼєкта!
+                                </h2>
+                                <p>
+                                    Тут зберігатимуться оголошення, які ви обрали.
+                                </p>
+                                <div class="redbtn">
+                                    <a href="#">
+                                        Перейти до каталогa
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -124,43 +136,62 @@
             </section>
 
             <section class="formsect">
-                <div class="formsect__wrapper">
-                    <div class="formsect__header">
-                        <h2>
-                            не знайшли те, що хотіли?
-                        </h2>
-                        <p>
-                            Заповніть коротку форму і ми підберемо для Вас найкращі варіанти.
-                        </p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="formsect__wrapper">
+                                <div class="formsect__header">
+                                    <h2>
+                                        не знайшли те, що хотіли?
+                                    </h2>
+                                    <p>
+                                        Заповніть коротку форму і ми підберемо для Вас найкращі варіанти.
+                                    </p>
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="Iмʼя">
+                                    <input type="text" placeholder="Номер телефону">
+                                    <input type="text" placeholder="Посилання на соціальну мережу">
+                                    <button>Надіслати!</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <form>
-                        <input type="text" placeholder="Iмʼя">
-                        <input type="text" placeholder="Номер телефону">
-                        <input type="text" placeholder="Посилання на соціальну мережу">
-                        <button>Надіслати!</button>
-                    </form>
                 </div>
             </section>
 
-            <section class="sidebar" style="border: none;">
+            <section class="sidebar hidden-sidebar hide" style="border:none">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_investment.png" media="(min-width: 1200px)">
+                                <img src="img/investment_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="investment.html">інвестиції</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_team.png" media="(min-width: 1200px)">
+                                <img src="img/team_sidebar_mobile.png" alt="image">
+                            </picture>
+                            <a href="team.html">Команда</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
@@ -185,8 +216,53 @@
         </div>
 
 
-        <footer class="footer">
-
+        <footer class="footer static-footer" style="border:none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>

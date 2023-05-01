@@ -2,20 +2,19 @@
     background-color: #111111;
 }
 
-.contacts__title {
-    margin-bottom: 20px;
-}
+
 
 .contacts__box {
     padding: 30px;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     position: relative;
+    overflow: hidden;
 
     .frame {
         position: absolute;
-        right: 0;
+        right: 1px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -108,5 +107,27 @@
                 color: #FFFFFF;
             }
         }
+    }
+}
+
+//  RESPOINSIVE --------------- //
+
+@media (min-width: 1200px) {
+
+    .contacts__box-header h2 {
+        font-size: 30px;
+    }
+    .contacts__box-header p {
+        font-size: 14px;
+    }
+    .contacts__box {
+        padding: 40px;
+        min-height: 370px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .contacts__box {
+        min-height: auto;
     }
 }

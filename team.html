@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>командa</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
@@ -20,6 +20,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -68,7 +73,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -80,171 +85,309 @@
 
         <main class="main">
 
-
             <section class="team">
                 <div class="container">
-                    <div class="team__title secttitle">
-                        <h1>
-                            командa
-                        </h1>
-                    </div>
-                    <div class="team__video">
-                        <!-- video from local -->
-                        <video poster="img/poster.png" id="player" class="video__controls" controls>
-                            <source src="img/video.mp4" type="video/mp4">
-                        </video>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="team__title secttitle">
+                                <h1>
+                                    командa
+                                </h1>
+                            </div>
+                            <div class="team__video">
+                                <!-- video from local -->
+                                <video poster="img/poster.png" id="player" class="video__controls" controls>
+                                    <source src="img/video.mp4" type="video/mp4">
+                                </video>
 
-                        <!-- video from youtube -->
-                        <!-- <div class="plyr__video-embed" id="player">
-                            <iframe poster="img/poster.png" src="https://www.youtube.com/watch?v=LrUM9GDJEpI"
-                                allowfullscreen allow="autoplay"></iframe>
-                        </div> -->
-                    </div>
-                    <div class="team__inner">
-                        <h2>
-                            наші менеджери
-                        </h2>
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager1.png" alt="photo">
+                                <!-- video from youtube -->
+                                <!-- <div class="plyr__video-embed" id="player">
+                                    <iframe poster="img/poster.png" src="https://www.youtube.com/watch?v=LrUM9GDJEpI"
+                                        allowfullscreen allow="autoplay"></iframe>
+                                </div> -->
+                            </div>
+                            <div class="team__inner">
+                                <h2>
+                                    наші менеджери
+                                </h2>
+                                <div class="team__inner-members">
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Ковалик Катерина
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Мархоцький Віталій
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Крук<br>
+                                                    Наталя
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Берлін<br>
+                                                    Олег
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Ковалик Катерина
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Мархоцький Віталій
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Крук<br>
+                                                    Наталя
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Берлін<br>
+                                                    Олег
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Ковалик Катерина
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Мархоцький Віталій
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Крук<br>
+                                                    Наталя
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Берлін<br>
+                                                    Олег
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Ковалик Катерина
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Мархоцький Віталій
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Крук<br>
+                                                    Наталя
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="team__item">
+                                        <div class="team__member">
+                                            <a href="#" class="popup__btn" data-popup="manager-popup">
+                                                <div class="manager__avatar">
+                                                    <img src="img/team_member.png" alt="photo">
+                                                </div>
+                                                <p>
+                                                    Берлін<br>
+                                                    Олег
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team__inner-btn">
+                                    <a href="#">
                                         <p>
-                                            Ковалик Катерина
+                                            Переглянути більше
                                         </p>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 6.17957L17.6416 3.82129L10 11.4629L2.35836 3.82129L0 6.17957L10 16.1796L20 6.17957Z"
+                                                fill="white" />
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager2.png" alt="photo">
-                                        <p>
-                                            Мархоцький Віталій
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager3.png" alt="photo">
-                                        <p>
-                                            Крук<br>
-                                            Наталя
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager4.png" alt="photo">
-                                        <p>
-                                            Берлін<br>
-                                            Олег
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager1.png" alt="photo">
-                                        <p>
-                                            Ковалик Катерина
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager2.png" alt="photo">
-                                        <p>
-                                            Мархоцький Віталій
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager3.png" alt="photo">
-                                        <p>
-                                            Крук<br>
-                                            Наталя
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="team__member">
-                                    <a href="#" class="popup__btn" data-popup="manager-popup">
-                                        <img src="img/team_manager4.png" alt="photo">
-                                        <p>
-                                            Берлін<br>
-                                            Олег
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team__inner-btn">
-                            <a href="#">
-                                <p>
-                                    Переглянути більше
-                                </p>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M20 6.17957L17.6416 3.82129L10 11.4629L2.35836 3.82129L0 6.17957L10 16.1796L20 6.17957Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="formsect">
-                <div class="formsect__wrapper">
-                    <div class="formsect__header">
-                        <h2>
-                            приєднайтеся до нашої команди!
-                        </h2>
-                        <p>
-                            Заповніть коротку форму і наш менеджер звʼяжеться з Вами.
-                        </p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+                            <div class="formsect__wrapper">
+                                <div class="formsect__header">
+                                    <h2>
+                                        приєднайтеся до нашої команди!
+                                    </h2>
+                                    <p>
+                                        Заповніть коротку форму і наш менеджер звʼяжеться з Вами.
+                                    </p>
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="Iмʼя">
+                                    <input type="text" placeholder="Номер телефону">
+                                    <input type="text" placeholder="Посилання на соціальну мережу">
+                                    <button>Надіслати!</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <form>
-                        <input type="text" placeholder="Iмʼя">
-                        <input type="text" placeholder="Номер телефону">
-                        <input type="text" placeholder="Посилання на соціальну мережу">
-                        <button>Надіслати!</button>
-                    </form>
                 </div>
             </section>
 
-            <section class="sidebar" style="border: none;">
+            <section class="sidebar static-sidebar" style="border:none">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_investment.png" media="(min-width: 1200px)">
+                                <img src="img/investment_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="investment.html">інвестиції</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_contact.png" media="(min-width: 1200px)">
+                                <img src="img/contacts_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="contacts.html">Контакти</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
@@ -256,71 +399,133 @@
                 <div class="popup__wrapper">
                     <div class="popup__body">
                         <div class="popup__close">
-                            <img src="img/svg_icons/close_popup.svg" alt="close">
+                            <picture>
+                                <source srcset="img/svg_icons/close_black_icon.svg" media="(min-width: 992px)">
+                                <img src="img/svg_icons/close_popup.svg" alt="close">
+                            </picture>
                         </div>
                         <div class="manager">
                             <div class="container">
-                                <div class="manager__title secttitle">
-                                    <img src="img/manager_photo.png" alt="photo">
-                                    <h1>
-                                        крук наталя
-                                    </h1>
-                                </div>
-                                <div class="manager__descr">
-                                    <p>
-                                        Менеджер з продажу Агентств нерухомості "ЖитлоМаркет".
-                                        Досвід у сфері нерухомості з 2019 р.
-                                    </p>
-                                    <p>
-                                        Всього пропозицій: <span>7</span>
-                                </div>
-                                <div class="manager__contacts">
-                                    <div class="manager__contacts-left">
-                                        <a href="tel:+ 38 (067) 671 21 12">+ 38 (067) 671 21 12</a>
-                                        <a href="tel:+ 38 (050) 671 21 12">+ 38 (050) 671 21 12</a>
+                                <div class="manager__inner">
+                                    <div class="manager__title secttitle">
+                                        <div class="manager__avatar">
+                                            <img src="img/manager_photo.png" alt="photo">
+                                        </div>
+                                        <h1>
+                                            крук наталя
+                                        </h1>
                                     </div>
-                                    <div class="manager__contacts-right">
-                                        <a href="#">
-                                            <img src="img/svg_icons/telegram.svg" alt="icon">
-                                        </a>
-                                        <a href="#">
-                                            <img src="img/svg_icons/viber.svg" alt="icon">
-                                        </a>
+                                    <div class="manager__info">
+                                        <h1>крук наталя</h1>
+                                        <div class="manager__descr">
+                                            <p>
+                                                Менеджер з продажу Агентств нерухомості "ЖитлоМаркет".
+                                                Досвід у сфері нерухомості з 2019 р.
+                                            </p>
+                                            <p>
+                                                Всього пропозицій: <span>7</span>
+                                        </div>
+                                        <div class="manager__contacts">
+                                            <div class="manager__contacts-left">
+                                                <a href="tel:+ 38 (067) 671 21 12">+ 38 (067) 671 21 12</a>
+                                                <a href="tel:+ 38 (050) 671 21 12">+ 38 (050) 671 21 12</a>
+                                            </div>
+                                            <div class="manager__contacts-right">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/svg_icons/telegram_black_icon.svg" media="(min-width: 992px)">
+                                                        <img src="img/svg_icons/telegram.svg" alt="icon">
+                                                    </picture>
+                                                </a>
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/svg_icons/viber_black_icon.svg" media="(min-width: 992px)">
+                                                        <img src="img/svg_icons/viber.svg" alt="icon">
+                                                    </picture>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="manager__btn redbtn">
+                                            <a href="manager-page.html">
+                                                Переглянути пропозиції
+                                            </a>
+                                        </div>
+                                        <div class="manager__btn whitebtn">
+                                            <a href="#">
+                                                Замовити дзвінок
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="manager__btn redbtn">
-                                    <a href="manager-page.html">
-                                        Переглянути пропозиції
-                                    </a>
-                                </div>
-
-                                <div class="manager__btn whitebtn">
-                                    <a href="#">
-                                        Замовити дзвінок
-                                    </a>
-                                </div>
+                                
+                                
                             </div>
                             </section>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <footer class="footer">
-
-            </footer>
-
         </div>
 
 
-        <script src="js/lib/jquery.js"></script>
-        <script src="js/lib/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-        <script src="js/lib/plyr-player.js"></script>
-        <script src="js/lib/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <footer class="footer static-footer" style="border: none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/lib/plyr-player.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>

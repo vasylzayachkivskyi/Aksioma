@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сторінка проекту</title>
-    <link rel="icon" type="image/x-icon" href="/imgfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/svg_icons/header_logo_desctope.svg">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
@@ -15,10 +15,15 @@
 
 <body>
     <div class="pagewrapper">
-        <header class="header">
+        <header class="header hide">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="img/svg_icons/header_logo_desctope.svg" alt="logotype">
+                            </a>
+                        </div>
                         <div class="burger-btn">
                             <span></span>
                             <span></span>
@@ -67,7 +72,7 @@
                         </nav>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <div class="header__logo">
+                        <div class="header__logo-mobile">
                             <a href="#">
                                 <img src="img/svg_icons/logo.svg" alt="logotype">
                             </a>
@@ -81,105 +86,167 @@
 
             <section class="real-estate sectpadding">
                 <div class="container">
-                    <div class="real-estate__title secttitle">
-                        <a href="#">
-                            <img src="img/svg_icons/arrow_back.svg" alt="back">
-                        </a>
-                        <h1>
-                            franko smart house
-                        </h1>
-                    </div>
 
-                    <div class="estate__content">
-                        <div class="estate__slider">
-                            <div class="swiper estate__slider-big">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="img/project_slide1.png" data-fancybox="gallery-estate">
-                                            <img src="img/project_slide1.png">
-                                        </a>
+                    <div class="row">
+                        <div class="col-12 col-xl-8">
+                            <div class="real-estate__title secttitle">
+                                <a href="#">
+                                    <img src="img/svg_icons/arrow_back.svg" alt="back">
+                                </a>
+                                <h1>
+                                    franko smart house
+                                </h1>
+                            </div>
+                            <div class="estate__content">
+                                <div class="estate__slider">
+                                    <div class="swiper estate__slider-big">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="img/project_slide1.png" data-fancybox="gallery-estate">
+                                                    <img src="img/project_slide1.png">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/project_slide2.png" data-fancybox="gallery-estate">
+                                                    <img src="img/project_slide2.png">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/project_slide3.png" data-fancybox="gallery-estate">
+                                                    <img src="img/project_slide3.png">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/project_slide4.png" data-fancybox="gallery-estate">
+                                                    <img src="img/project_slide4.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/project_slide2.png" data-fancybox="gallery-estate">
-                                            <img src="img/project_slide2.png">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/project_slide3.png" data-fancybox="gallery-estate">
-                                            <img src="img/project_slide3.png">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/project_slide4.png" data-fancybox="gallery-estate">
-                                            <img src="img/project_slide4.png">
-                                        </a>
+                                    <div class="swiper estate__slider-small">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/project_slide1.png" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/project_slide2.png" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/project_slide3.png" />
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="img/project_slide4.png" />
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                            <div class="swiper estate__slider-small">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/project_slide1.png" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/project_slide2.png" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/project_slide3.png" />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="img/project_slide4.png" />
-                                        </a>
-                                    </div>
+                                <div class="estate__descr">
+                                    <p>
+                                        “FRANKO smart house” – це житловий комплекс комфорт класу. Комплекс чудово вписався в розвинуту інфраструктуру мікрорайону Позитрон. Поруч є все необхідне для комфортного проживання Вашої родини: дитячий садок №4, школа-гімназія №3, міська поліклініка №4, торгівельні та розважальні центри (“Велес 555”, “Арсен”, “Епіцентр”), продуктові супермаркети, фітнес-центр.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="estate__descr">
-                            <p>
-                                “FRANKO smart house” – це житловий комплекс комфорт класу. Комплекс чудово вписався в розвинуту інфраструктуру мікрорайону Позитрон. Поруч є все необхідне для комфортного проживання Вашої родини: дитячий садок №4, школа-гімназія №3, міська поліклініка №4, торгівельні та розважальні центри (“Велес 555”, “Арсен”, “Епіцентр”), продуктові супермаркети, фітнес-центр.
-                            </p>
-                        </div>
                     </div>
-
+                    
                 </div>
             </section>
 
-            <section class="sidebar">
+            <section class="sidebar static-sidebar">
                 <div class="container">
-                    <div class="sidebar__item">
-                        <img src="img/catalog_sidebar_mobile.jpg" alt="image">
-                        <a href="catalog.html">каталог</a>
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_catalog.png" media="(min-width: 1200px)">
+                                <img src="img/catalog_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="catalog.html">каталог</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_investment.png" media="(min-width: 1200px)">
+                                <img src="img/investment_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="investment.html">інвестиції</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_about.png" media="(min-width: 1200px)">
+                                <img src="img/about_sidebar_mobile.jpg" alt="image">
+                            </picture>
+                            <a href="about.html">про нас</a>
+                        </div>
+                        <div class="sidebar__item">
+                            <picture>
+                                <source srcset="img/sidebar_desc_team.png" media="(min-width: 1200px)">
+                                <img src="img/team_sidebar_mobile.png" alt="image">
+                            </picture>
+                            <a href="team.html">Команда</a>
+                        </div>
                     </div>
-                    <div class="sidebar__item">
-                        <img src="img/investment_sidebar_mobile.jpg" alt="image">
-                        <a href="investment.html">інвестиції</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/about_sidebar_mobile.jpg" alt="image">
-                        <a href="about.html">про нас</a>
-                    </div>
-                    <div class="sidebar__item">
-                        <img src="img/contacts_sidebar_mobile.jpg" alt="image">
-                        <a href="contacts.html">контакти</a>
-                    </div>
-
                 </div>
             </section>
 
         </main>
 
 
-        <footer class="footer">
-
+        <footer class="footer static-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <p class="open-footer">
+                            <img src="img/svg_icons/arrow_up.svg" alt="img">
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12 footer-hide">
+                        <div class="footer__inner">
+                            <div class="footer__socials">
+                                <h3>
+                                    ми завжди на звʼязку!
+                                </h3>
+                                <div class="footer__socials-row">
+                                    <a href="#">
+                                        <img src="img/svg_icons/telegram_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/viber_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/tiktok.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/facebook_icon.svg" alt="socials">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/svg_icons/instagramm_icon.svg" alt="socials">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="img/svg_icons/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__phone">
+                                <img src="img/svg_icons/phone_icon.svg" alt="phone">
+                                <a href="tel:+38 (067) 671 21 12">+38 (067) 671 21 12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>
