@@ -266,6 +266,87 @@
 }
 
 .slider {
+    position: relative;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 66;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        height: 93%;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+    }
+
+    .description {
+        position: absolute;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 20px 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) -19.17%, #000000 65%);
+
+        &__row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .info {
+            margin-top: 10px;
+
+            &-row {
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+
+                &+.info-row {
+                    margin-top: 6px;
+                }
+
+                img {
+                    margin-right: 6px;
+                    width: 16px;
+                    height: 17px;
+                    background-size: cover;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 133%;
+                    color: #C7C7C7;
+                    font-weight: 400;
+                }
+
+                span {
+                    color: #B0292E;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 125%;
+            color: #FFFFFF;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 111%;
+            text-align: right;
+            color: #FFFFFF;
+        }
+    }
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -297,88 +378,18 @@
     .swiper-slide {
         position: relative;
 
-        &:after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 95%;
-            height: 93%;
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            border-radius: 20px;
-        }
-
-        .description {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            padding: 20px 0;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) -19.17%, #000000 65%);
-
-            &__row {
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-                padding: 0 20px;
-            }
-
-            .info {
-                margin-top: 10px;
-
-                &-row {
-                    display: flex;
-                    align-items: center;
-                    padding: 0 20px;
-
-                    &+.info-row {
-                        margin-top: 6px;
-                    }
-
-                    img {
-                        margin-right: 6px;
-                        width: 16px;
-                        height: 17px;
-                        background-size: cover;
-                    }
-
-                    p {
-                        font-size: 12px;
-                        line-height: 133%;
-                        color: #C7C7C7;
-                        font-weight: 400;
-                    }
-
-                    span {
-                        color: #B0292E;
-                        margin-right: 3px;
-                    }
-                }
-            }
-
-            span {
-                font-size: 16px;
-                line-height: 125%;
-                color: #FFFFFF;
-            }
-
-            p {
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 111%;
-                text-align: right;
-                color: #FFFFFF;
-            }
-        }
-
         img {
             width: 100%;
             height: 267px;
             object-fit: cover;
+            transition: .5s;
+            background-repeat: no-repeat;
+        }
+    }
+    &:hover{
+        .swiper-slide-active img{
+            transform: scale(1.08);
+            filter: brightness(90%);
         }
     }
 }
@@ -405,6 +416,7 @@
     .slider .swiper-slide img {
         height: 70vw;
     }
+
     .manager__title .manager__avatar {
         width: 136px;
         height: 136px;
@@ -430,6 +442,7 @@
     .manager {
         padding: 110px 0 60px;
     }
+
     .slider .swiper-slide img {
         height: 340px;
     }
@@ -439,6 +452,7 @@
     .slider .swiper-slide img {
         height: 268px;
     }
+
     .manager__contacts {
         margin-bottom: 60px;
     }
@@ -613,15 +627,18 @@
 
 
 @media(min-width: 1200px) {
-    .proposition .col-xl-8{
+    .proposition .col-xl-8 {
         width: 68%;
     }
+
     .slider .swiper-slide img {
         height: 220px;
     }
-    .proposition__inner .col-12{
+
+    .proposition__inner .col-12 {
         padding: 0 10px;
     }
+
     .manager {
         padding: 0px 0 60px;
     }
@@ -664,9 +681,10 @@
 
 
 @media(min-width: 1400px) {
-    .proposition .col-xl-8{
+    .proposition .col-xl-8 {
         width: 72%;
     }
+
     .manager__title {
         img {
             width: 295px;

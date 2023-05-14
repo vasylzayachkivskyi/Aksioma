@@ -10,7 +10,7 @@
         height: 2px;
         border-radius: 3px;
         background-color: #fff;
-        transition: .3s;
+        transition: .6s;
 
         &+span {
             margin-top: 6px;
@@ -20,10 +20,22 @@
     &.active {
         background-color: #fff;
         transition: .5s .4s;
+        span {
+            opacity: 0;
+            top: 50%;
+          }
+          span:first-child {
+            opacity: 1;
+            transform: rotate(405deg) translate(5px, 5px);
+          }
+          span:last-child {
+            opacity: 1;
+            transform: rotate(-405deg) translate(6px,-6px);
+          }
 
         span {
             background-color: #000;
-            transition: .5s .5s;
+            transition: .7s .3s;
         }
     }
 }

@@ -65,6 +65,10 @@
         height: 245px;
         border-radius: 20px;
         overflow: hidden;
+        transition: .3s;
+        &:hover{
+            transform: translateY(-5px);
+        }
         &.tprow{
             display: none;
         }
@@ -460,18 +464,6 @@
             .searchinp {
                 position: relative;
                 margin-left: 10px;
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    right: 10%;
-                    top: 50%;
-                    transform: translateY(-40%);
-                    background-image: url(../img/svg_icons/select_arrow.svg);
-                    width: 20px;
-                    height: 20px;
-                    z-index: 3;
-                }
             }
         }
 
