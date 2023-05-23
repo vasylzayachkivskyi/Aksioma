@@ -4,6 +4,17 @@
 
 
 
+
+
+
+.contacts__title {
+    h1 {
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 4px;
+    }
+}
+
 .contacts__box {
     padding: 30px;
     border: 1px solid #FFFFFF;
@@ -117,9 +128,11 @@
     .contacts__box-header h2 {
         font-size: 30px;
     }
+
     .contacts__box-header p {
         font-size: 14px;
     }
+
     .contacts__box {
         padding: 40px;
         min-height: 370px;

@@ -1,5 +1,9 @@
 .investment__title {
+
     h1 {
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 4px;
         margin-bottom: 20px;
     }
 }
@@ -347,6 +351,9 @@
         text-transform: uppercase;
         font-family: 'Mulish';
         color: #FFFFFF;
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 4px;
     }
 }
 

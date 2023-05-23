@@ -119,8 +119,8 @@ $(function () {
         });
 
         // Отримуємо кнопки прокручування для поточного слайдера
-        var prevButton = $(this).find('.slider-prev');
-        var nextButton = $(this).find('.slider-next');
+        var prevButton = $(this).parent('.proposition__item').find('.slider-prev');
+        var nextButton = $(this).parent('.proposition__item').find('.slider-next');
 
         // Додаємо обробники подій на кнопки для поточного слайдера
         prevButton.on('click', function () {

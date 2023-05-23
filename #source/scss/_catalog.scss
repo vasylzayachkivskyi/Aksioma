@@ -42,6 +42,11 @@
 
 .catalog__title {
     margin-bottom: 40px;
+    h1{
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 4px;
+    }
 }
 
 .catalog__top {
@@ -583,6 +588,9 @@
     }
     .search-popup {
         background-color: rgba(#111, .5);
+        .popup__title h2 {
+            border-bottom: none;
+        }
 
         .popup__body {
             background: #f7f7f7;

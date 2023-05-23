@@ -4,6 +4,11 @@
 
 .about__title {
     margin-bottom: 20px;
+    h1{
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 4px;
+    }
 }
 
 .about__descr {
