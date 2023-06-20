@@ -99,6 +99,13 @@ $(function () {
         $('body').removeClass('hidden');
     });
 
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.popup__body').length) {
+          $('.popup__window').removeClass('active');
+          $('body').removeClass('hidden');
+        }
+      });
+
     //  gallery ----------- //
     if ($('[data-fancybox="gallery-estate"]').length > 0) {
         Fancybox.bind('[data-fancybox="gallery-estate"]', {
